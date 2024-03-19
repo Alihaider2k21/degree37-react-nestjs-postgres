@@ -1,0 +1,481 @@
+@import '../../../../../../styles/Global/Variable.scss';
+
+.permissionlist {
+  background-color: #eeeeee;
+  margin-right: 10px;
+  color: #296e8a;
+  padding-right: 0px !important;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.removeicon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.headercolor {
+  background-color: #cfd8e5 !important;
+}
+
+.flexwrap {
+  padding: 10px 0px 10px 40px !important;
+}
+
+.formcontainer {
+  margin-top: 15vh;
+}
+
+.rows {
+  width: 100%;
+}
+
+.errorcolor {
+  &,
+  p {
+    color: red;
+    font-size: 13px;
+  }
+}
+
+.bordercolor {
+  border-color: white !important;
+}
+
+.bordercolor:hover {
+  background-color: white !important;
+}
+
+.footertext {
+  position: absolute;
+  left: 285px;
+  cursor: pointer;
+}
+
+.footertext:hover {
+  color: #005375;
+}
+$pure-dark: #000000;
+$light-gray: #f5f5f5;
+$light-blue: #ced8e5;
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 0;
+  margin-left: 2em;
+  .editIconContainer {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 100;
+    right: 0;
+    padding: 15px;
+    z-index: 5 !important;
+  }
+
+  .editIcon {
+    font-size: 1.25rem;
+    margin-right: 2px;
+  }
+
+  span {
+    font-size: 1rem;
+  }
+}
+.adviewimg {
+  border: 4px solid white;
+  border-radius: 6px;
+}
+
+.cardContainer {
+  margin-top: 9vh;
+  width: auto;
+
+  .cardHeader {
+    background-color: $light-blue;
+    height: 50px;
+    font-weight: 500;
+    color: $pure-dark;
+  }
+
+  .cardBody {
+    padding: 0;
+    align-items: center;
+    overflow: hidden;
+
+    .cardRow {
+      // height: 7vh; done by awais amir
+
+      .roleNameCol {
+        background-color: $light-gray;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        padding: 15px 30px;
+        // padding-left: 30px;
+        color: $pure-dark;
+        font-weight: 400;
+      }
+
+      .supervisorCol {
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        padding-left: 20px;
+        color: $pure-dark;
+        font-weight: 400;
+        padding-right: 30px;
+      }
+    }
+  }
+}
+.divider {
+  border-top: 1px solid #e2e2e2;
+}
+.insightsCardContainer {
+  margin-top: 3vh;
+  margin-bottom: 200px !important;
+
+  .insightsCardHeader {
+    background-color: $light-blue;
+    height: 50px;
+    font-weight: 500;
+    color: $pure-dark;
+  }
+
+  .insightsCardBody {
+    padding: 0;
+    align-items: center;
+
+    .insightsRow {
+      height: 7vh;
+
+      .insightsLabelCol {
+        background-color: $light-gray;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        padding-left: 30px;
+        color: $pure-dark;
+        font-weight: 400;
+      }
+
+      .insightsValueCol {
+        display: flex;
+        align-items: center;
+        padding-left: 20px;
+        font-size: 16px;
+        color: $pure-dark;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.edittext {
+  font-size: 14px;
+  font-weight: 400px;
+  line-height: 24px;
+  z-index: 10 !important;
+}
+.viewadsimg {
+  height: 320px !important;
+}
+.imageContainer {
+  margin-top: 9vh;
+  width: auto;
+}
+@media only screen and (max-width: 1387px) {
+  .imageContainer {
+    margin-top: 9vh !important;
+    width: auto;
+    margin-bottom: 200px !important;
+  }
+  .insightsCardContainer {
+    margin-bottom: 0px !important;
+  }
+}
+
+.badge {
+  min-width: 80px;
+  min-height: 24px;
+  display: inline-flex;
+  margin: 0 3px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 12px;
+  color: $secondary;
+  background-color: $neutral5;
+  font-weight: 400;
+  &.active {
+    background-color: #def0d7;
+    color: #5ca044;
+  }
+  &.inactive {
+    background-color: #fff2f2;
+    color: #ff1e1e;
+  }
+}
+
+.formcontainer {
+  margin-top: 15vh;
+}
+
+.rows {
+  width: 100%;
+}
+
+.errorcolor {
+  color: red;
+}
+
+.bordercolor {
+  border-color: white !important;
+}
+
+.bordercolor:hover {
+  background-color: white !important;
+}
+
+.footertext {
+  position: absolute;
+  left: 375px;
+  cursor: pointer;
+}
+
+.footertext:hover {
+  color: #005375;
+}
+.errorcolor {
+  color: red;
+}
+.largeimgborder {
+  border: 1px solid #d9d9d9 !important;
+  border-right: none !important;
+  border-top: none !important;
+  border-left: none !important;
+}
+.mediumimgdiv {
+  width: 181px !important;
+  height: 103px !important;
+}
+
+.filterbutton {
+  width: 180px !important;
+}
+
+.archiveoption {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.my_div2 {
+  width: 100% !important;
+  overflow-x: scroll;
+}
+.filterbutton {
+  width: 256px !important;
+}
+.statusinputfield {
+  height: 48px;
+}
+.statusfilter {
+  width: inherit;
+}
+.disabledcolor {
+  color: #a3a3a3 !important;
+}
+.tr {
+  align-items: center !important;
+}
+.tr > th:nth-child(1) {
+  width: 207px !important;
+}
+.tr > th:nth-child(2) {
+  width: 185px !important;
+}
+
+.tr > th:nth-child(3) {
+  width: 619px !important;
+}
+.tr > th:nth-child(4) {
+  width: 246px !important;
+}
+.tr > th:nth-child(5) {
+  width: 155px !important;
+}
+.tr > th:nth-child(6) {
+  width: 101px !important;
+}
+.tr > th {
+  padding: 11px 30px !important;
+  line-height: 50px !important;
+  vertical-align: middle !important;
+}
+.tr > td {
+  padding: 11px 30px !important;
+}
+.cusrsor {
+  cursor: pointer;
+}
+
+@media only screen and (min-width: 1200px) {
+  .my_div {
+    width: 100% !important;
+  }
+}
+
+.my_div {
+  width: 1200px;
+}
+
+.my_div::-webkit-scrollbar {
+  display: none;
+}
+
+.formcontainer {
+  width: 792px !important;
+  display: block !important;
+}
+.imgtable {
+  width: 82px !important;
+  height: 49px !important;
+}
+.formcontainer h5 {
+  margin-bottom: 30px !important;
+}
+.textarea {
+  height: 120px !important;
+  font-size: 14px !important;
+}
+.textarea:focus {
+  box-shadow: none !important;
+}
+.inputfieldgap {
+  margin-bottom: 20px !important;
+}
+.saveandclose {
+  padding: 12px 23px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #387de5;
+  color: #387de5;
+  margin-right: 20px !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+}
+.savechange {
+  background-color: #387de5;
+  color: white;
+  margin-right: 30px !important;
+}
+.imagepreview {
+  height: 235px;
+  width: 335px;
+  margin-bottom: 17px;
+}
+.createbtn {
+  margin-right: 30px !important;
+  padding: 0px 38px !important;
+}
+.saveandclose:hover {
+  background-color: #edf4ff !important;
+}
+.cusrsor {
+  cursor: pointer;
+}
+.savechange:hover {
+  background-color: #387de5 !important;
+  opacity: 0.8 !important;
+}
+.archivebtn {
+  text-decoration: none !important;
+  font-size: 15px !important;
+}
+.archivebtn:hover {
+  color: #387de5 !important;
+}
+.footercancelbtn {
+  font-size: 15px !important;
+  margin-right: 0px !important;
+  padding-right: 20px !important;
+}
+.selectfilebtn {
+  border-radius: 6px;
+  background-color: #387de5;
+  height: 40px;
+  padding: 12px 23px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 16px;
+  font-weight: 400;
+}
+.legendadstext div {
+  height: 125px !important;
+  vertical-align: middle !important;
+  display: flex !important;
+  flex-direction: column !important;
+  // align-items: center !important;
+  justify-content: center !important;
+}
+.legendadstext h4 {
+  font-size: 20px !important;
+  font-weight: 400;
+}
+
+.legendadstext p {
+  font-size: 14px !important;
+  font-weight: 400;
+  color: #a3a3a3 !important;
+}
+.dashedborder {
+  border: 2px dashed #ccc;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 98% !important;
+  padding: 15px !important;
+}
+.cancelbutton {
+  font-size: 14px;
+  margin-right: 20px;
+  color: #005375;
+  line-height: 24px;
+  cursor: pointer;
+}
+.cancelbutton:hover {
+  color: #387de5 !important;
+}
+.adtypeselect {
+  padding-left: 20px !important;
+}
+.adtypeselect:focus {
+  box-shadow: none !important;
+}
+.elipses {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 235px;
+}
+.contactroledescriptionfield {
+  width: 732px !important;
+  height: 144px !important;
+}
+.textaeraPadding {
+  padding-top: 25px !important;
+}
+@media only screen and (max-width: 1050px) {
+  .contactroledescriptionfield {
+    width: 100% !important;
+  }
+}

@@ -1,0 +1,108 @@
+@import '../../../../../styles/Global/Variable.scss';
+
+.paginationClasses > div > div:nth-child(2) {
+  display: none;
+}
+.paginationClasses > div > div:nth-child(1) > button:first-child {
+  display: none;
+}
+.paginationClasses > div > div:nth-child(1) > button:last-child {
+  display: none;
+}
+.paginationClasses > div {
+  margin-top: unset;
+}
+.content {
+  .shiftTime {
+    .shift {
+      border: none;
+      .MuiOutlinedInput-root {
+        border-radius: 8px;
+      }
+    }
+    input {
+      padding: 0px 35px 0px 20px;
+      border: none;
+      color: #666;
+    }
+  }
+  .error p {
+    font-size: 13px !important;
+    color: #ff1e1e !important;
+  }
+  .rc-time-picker {
+    width: 100% !important;
+    svg {
+      position: absolute !important;
+      right: 8px !important;
+      top: 29% !important;
+    }
+  }
+}
+.aboutAccountMain {
+  .custom-datepicker {
+    border-radius: 8px;
+    border: 1px solid #e4e4e4;
+    padding: 16px 20px;
+  }
+  thead {
+    height: 70px;
+  }
+  .tableHead {
+    border-left: unset !important;
+    border-right: unset !important;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .tableTD {
+    border-left: unset !important;
+    border-right: unset !important;
+  }
+  .linkText {
+    color: #005375 !important;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    .formItem {
+      // margin-right: 20px;
+      position: relative;
+      input[type='text'] {
+        border: 1px solid $neutral6;
+        border-radius: 8px;
+        min-height: 56px;
+        padding: 10px 20px 10px 56px;
+        transition: all 0.5s ease;
+        background-image: url(../../../../../../public/images/Search.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: 8% 50%;
+        width: 326px;
+        font-size: 16px;
+      }
+
+      input[type='text']:hover {
+        border-color: $primary;
+      }
+
+      input[type='text']:focus {
+        background-color: unset;
+        outline: none;
+        box-shadow: unset;
+        border-color: $primary;
+      }
+
+      input[type='text']:focus::placeholder {
+        color: $neutral10 !important;
+      }
+
+      input[type='text']:hover::placeholder {
+        color: $neutral;
+      }
+
+      input[type='text']::placeholder {
+        color: $neutral10;
+      }
+    }
+  }
+}

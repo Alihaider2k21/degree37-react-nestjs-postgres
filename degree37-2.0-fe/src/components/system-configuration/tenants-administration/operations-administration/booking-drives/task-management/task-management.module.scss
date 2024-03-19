@@ -1,0 +1,73 @@
+@import '../../../../../../styles/Global/Variable.scss';
+.taskManagement {
+  .formGroup {
+    width: 60%;
+    margin: 1% auto;
+    border-radius: 10px;
+    background-color: #ffffff;
+    border: 1px solid #d9d9d9;
+    padding: 2%;
+    margin-bottom: 20px;
+  }
+
+  .group {
+    h6 {
+      color: black;
+    }
+    select {
+      color: #ccc;
+    }
+    textarea {
+      border: 0.5px solid #ccc;
+      font-size: 14px;
+      &::placeholder {
+        color: #ccc;
+      }
+    }
+  }
+}
+
+.transparent-outline-btn {
+  background-color: transparent;
+  color: #007bff; /* Primary color from Bootstrap */
+  border: 1px solid rgba(0, 123, 255, 0.5); /* Transparent outline with primary color */
+}
+
+.cancelbutton {
+  font-size: 14px;
+  margin-right: 20px;
+  color: #005375;
+  line-height: 24px;
+  cursor: pointer;
+}
+.taskManagementTable {
+  width: 70%;
+}
+.taskManagementListTable {
+  width: 100%;
+}
+
+.tableTest {
+  table,
+  x th,
+  td {
+    margin: auto;
+  }
+  thead > tr > th {
+    font-size: 14px !important;
+  }
+}
+
+// .filterBar {
+//   gap: 130px;
+//   form > div {
+//     width: 80%;
+//   }
+// }
+.filter {
+  flex: 1;
+}
+
+.collectionSelect {
+  width: -webkit-fill-available !important;
+}

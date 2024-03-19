@@ -1,0 +1,34 @@
+@import '../../../../../../styles/Global/Variable.scss';
+
+.procedureTypesForm {
+  .group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    :global(.form-field) {
+      margin-bottom: 0;
+    }
+  }
+  .smallHeading {
+    p {
+      font-size: 16px;
+      color: $neutral;
+      margin-bottom: 0;
+    }
+  }
+}
+
+.input_shrink {
+  flex-shrink: 0 !important;
+}
+
+.drop > li > a:hover {
+  background-color: #1967d2 !important;
+  color: white !important;
+  // border: 1px solid #000 !important;
+}
+
+.height {
+  height: auto !important;
+}

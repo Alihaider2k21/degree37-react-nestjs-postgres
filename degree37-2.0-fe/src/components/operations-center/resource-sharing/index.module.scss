@@ -1,0 +1,94 @@
+.heading {
+  margin-bottom: 24px !important;
+  margin-top: -7px !important;
+}
+
+.des div {
+  label {
+    background-color: #ffffff !important;
+    width: 96% !important;
+    padding-top: 6px !important;
+  }
+  textarea {
+    top: 23px !important;
+  }
+  width: 100% !important;
+}
+
+.footerNonCollection {
+  margin-top: 0px !important;
+
+  button {
+    padding: 12px 23px !important;
+  }
+}
+
+.error {
+  font-size: 13px;
+  color: #ff1e1e !important;
+}
+
+.toggleText {
+  color: #212121;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.fieldDate {
+  position: relative;
+
+  input:placeholder-shown {
+    padding-top: 10px !important;
+  }
+
+  label {
+    color: #555555;
+    top: 19% !important;
+    font-size: 12px !important;
+  }
+  .dateCross {
+    right: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+.ellipsis {
+  white-space: nowrap;
+  width: 257px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.btncancel {
+  font-size: 14px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  color: #005375;
+  &:hover {
+    color: #387de5;
+    cursor: pointer;
+  }
+}
+
+.btnAddContact {
+  display: inline-flex;
+  height: 40px;
+  padding: 12px 23px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background-color: #387de5;
+  margin-bottom: 0px;
+  color: white !important;
+  &:hover {
+    cursor: pointer;
+    background-color: #72a3d0;
+  }
+}

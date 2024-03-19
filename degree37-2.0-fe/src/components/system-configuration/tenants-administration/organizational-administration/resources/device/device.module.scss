@@ -1,0 +1,56 @@
+@import '../../../../../../styles/Global/Variable.scss';
+.device {
+  textarea {
+    border: 1px solid $neutral6;
+    border-radius: 8px;
+    min-height: 160px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    resize: none;
+    &:hover {
+      border-color: $primary;
+      &::placeholder {
+        font-size: 16px;
+        color: $neutral;
+      }
+    }
+    &:focus {
+      background-color: unset;
+      outline: none;
+      box-shadow: unset;
+      border-color: $primary;
+    }
+    &::placeholder {
+      font-size: 16px;
+      color: $neutral10;
+      transition: all 0.5s ease;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+}
+
+.disabledcolor {
+  color: #a3a3a3 !important;
+}
+
+.errorcolor {
+  font-size: 13px;
+  color: #ff1e1e !important;
+}
+
+.drop > li > a:hover {
+  background-color: #1967d2 !important;
+  color: white !important;
+  // border: 1px solid #000 !important;
+}
+
+.selectBorder {
+  background-image: none !important;
+  &:hover {
+    border-color: #e4e4e4 !important;
+  }
+}

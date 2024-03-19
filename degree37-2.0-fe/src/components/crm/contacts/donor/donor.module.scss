@@ -1,0 +1,170 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.label:hover {
+  color: #000 !important;
+}
+.volunteer {
+  padding-bottom: 6rem;
+  .subHeading {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 1rem;
+  }
+
+  .form-field.checkbox {
+    width: 33%; /* Set the width to 33% */
+    display: inline-flex; /* Display inline */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 0; /* Remove default margin */
+    &:not(:last-child) {
+      margin-right: 20px; /* Add some spacing between checkboxes */
+    }
+    .form-check-input {
+      width: 22px;
+      height: 22px;
+    }
+    .form-check-label {
+      margin-left: 5px;
+    }
+    .error {
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+  :global {
+    .form-field.checkbox.cc label {
+      margin-left: 0px !important;
+    }
+  }
+}
+.accountViewMain {
+  // .heroIconImg {
+  // }
+}
+.imageMainContent {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 -5px 5px -5px #333;
+  background-color: white;
+}
+
+.drop > li > a:hover {
+  background-color: #1967d2 !important;
+  color: white !important;
+  // border: 1px solid #000 !important;
+}
+
+.duplicatePopup {
+  max-width: 450px !important;
+}
+
+.recentListData {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex: 1 0 0;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+}
+
+.mainRecentList {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.main {
+  padding: 30px;
+}
+
+.heading {
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.listItem {
+  color: #000;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.createdAt {
+  color: #a3a3a3;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.icon {
+  width: 48.64px;
+  height: 48.64px;
+  flex-shrink: 0;
+  border: #ced8e5 1px solid;
+  border-radius: 25px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.line {
+  border: #ced8e5 1px solid;
+}
+
+.lineDiv {
+  height: calc(100% - 28.64px);
+  position: absolute;
+  left: 34%;
+}
+
+.iconMain {
+  position: relative;
+}
+
+.donorFilterHeader {
+  color: #000;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.donorFilterPara {
+  color: #a3a3a3;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.donorFilterCard {
+  background-color: #fff;
+  max-width: 793px;
+  height: 389px;
+  margin: 87px auto 0;
+  padding: 108px 107px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #d9d9d9;
+}
+.faFileLinesAlt {
+  width: 64px;
+  height: 64px;
+  margin-bottom: 30px !important;
+  margin: 0 auto;
+}

@@ -1,0 +1,66 @@
+@import '../../../styles/Global/Variable.scss';
+
+.paginationBody {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 40px;
+  .paginationContainer {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    .pageCardactive {
+      height: 32px;
+      min-width: 32px;
+      padding: 2px;
+      border-radius: 4px;
+      border: none;
+      margin: 0 6px;
+      color: $neutral9;
+      background: $primary;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .pageCard {
+      background: none;
+      border: none;
+      border-radius: 3px;
+      padding: 0.3rem 0.7rem;
+      color: $neutral;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      > svg {
+        color: #387de5;
+      }
+      &:disabled {
+        > svg {
+          color: lightgray;
+        }
+        cursor: not-allowed;
+      }
+    }
+    .moreIcon {
+      width: '20px';
+      height: 'auto';
+    }
+  }
+  .showNumberofItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    color: $neutral2;
+    .dropdown {
+      padding: 0.4rem;
+      border: none;
+      background-color: inherit;
+      color: $neutral2;
+      outline: none;
+      width: 65px;
+      text-indent: 0;
+    }
+  }
+}

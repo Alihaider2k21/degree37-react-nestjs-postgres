@@ -1,0 +1,156 @@
+@import '../../../../../../styles/Global/Variable.scss';
+
+.disabledcolor {
+  color: #a3a3a3 !important;
+}
+
+p {
+  color: $neutral;
+}
+.formcontainer {
+  // margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.cancelbutton {
+  font-size: 14px;
+  margin-right: 20px;
+  color: #005375;
+  line-height: 24px;
+  cursor: pointer;
+}
+.cancelbutton:hover {
+  color: #387de5;
+}
+
+.rows {
+  width: 100%;
+}
+.saveandclose {
+  padding: 12px 23px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #387de5;
+  color: #387de5;
+  margin-right: 20px !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.saveandclose:hover {
+  background-color: #edf4ff !important;
+}
+
+.marginLeft {
+  margin-left: 0 !important;
+}
+
+.select {
+  color: var(--bs-body-color);
+}
+
+input:focus + .label {
+  top: 25% !important;
+}
+
+.labelselected {
+  font-size: 12px !important;
+  transform: translateY(-50%);
+  top: 20% !important;
+  display: 'inherit';
+}
+
+.dropdownselected {
+  // border: 1px solid #ccc;
+  padding: 1rem 2.25rem 1rem 0.75rem;
+  cursor: pointer;
+}
+
+.dropdownoptions {
+  display: block;
+  position: absolute;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: scroll;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  z-index: 1000;
+}
+
+.dropdownoptions li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Hide options by default */
+.dropdownoptions {
+  display: none;
+}
+
+/* Show options when the dropdown is open */
+.customdropdown .dropdownoptions {
+  display: block;
+}
+
+.selected {
+  background-color: #f0f0f0;
+}
+
+.badgeStyles {
+  padding: 5px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  color: white;
+  background-color: #387de5;
+  border-radius: 50% !important;
+}
+
+.dropdownWidthMenu {
+  width: 97% !important;
+}
+
+.formFieldFilter {
+  width: 49%;
+  margin-bottom: 3%;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  .toggle-text {
+    font-size: 16px;
+    color: $neutral;
+  }
+  label {
+    position: relative;
+    top: 2px;
+    bottom: unset;
+    left: unset;
+    right: unset;
+    transform: unset;
+    margin-left: 15px;
+    color: $neutral;
+  }
+  input {
+    padding: 5px;
+    &:disabled {
+      pointer-events: none;
+      border-color: $neutral5;
+      background-color: $neutral7;
+      color: $neutral2;
+      &:checked {
+        --bs-form-check-bg-image: url('../../../../../../../public/images/checkBlackTick.png');
+        background-size: auto;
+      }
+    }
+  }
+}

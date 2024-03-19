@@ -1,0 +1,19 @@
+@import '../../../styles/Global/Variable.scss';
+
+.rootMain {
+  .layoutMain {
+    display: flex;
+    flex-flow: wrap;
+    padding-top: 8vh;
+    position: fixed;
+    width: 100%;
+    .contentMain {
+      background-color: $neutral7;
+      width: 82%;
+      flex: 1;
+      height: 92vh;
+      overflow: auto;
+      position: relative;
+    }
+  }
+}

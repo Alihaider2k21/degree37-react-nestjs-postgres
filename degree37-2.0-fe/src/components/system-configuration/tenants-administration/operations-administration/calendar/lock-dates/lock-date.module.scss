@@ -1,0 +1,34 @@
+@import '../../../../../../styles/Global/Variable.scss';
+.lockDate {
+  textarea {
+    border: 1px solid $neutral6;
+    border-radius: 8px;
+    min-height: 160px;
+    padding: 22px 20px 10px 20px;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    resize: none;
+    &:hover {
+      border-color: $primary;
+      &::placeholder {
+        font-size: 16px;
+        color: $neutral;
+      }
+    }
+    &:focus {
+      background-color: unset;
+      outline: none;
+      box-shadow: unset;
+      border-color: $primary;
+    }
+    &::placeholder {
+      font-size: 16px;
+      color: $neutral10;
+      transition: all 0.5s ease;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+}

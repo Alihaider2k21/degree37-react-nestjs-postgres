@@ -1,0 +1,47 @@
+@import '../../../../../styles/Global/Variable.scss';
+
+.current {
+  td:first-child {
+    position: relative;
+
+    &::before {
+      content: '';
+      z-index: 1;
+      background-color: $primary;
+      height: 100%;
+      width: 20px;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      content: 'Current';
+      color: white;
+      font-size: 12px;
+      white-space: nowrap;
+      z-index: 2;
+      left: -12px;
+      top: 40%;
+      transform: rotate(-90deg);
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+    }
+  }
+}
+.verticalLabelContainer {
+  height: 100%;
+  left: 0;
+  padding-inline: 3px;
+  background-color: $primary;
+  color: $neutral9;
+
+  .verticalLabelText {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    font-size: 12px;
+    font-weight: 400;
+  }
+}

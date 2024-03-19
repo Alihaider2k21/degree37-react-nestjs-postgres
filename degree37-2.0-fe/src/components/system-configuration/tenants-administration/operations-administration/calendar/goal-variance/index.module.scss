@@ -1,0 +1,20 @@
+.mainContent {
+  :global {
+    .mainContentInner {
+      height: 70%;
+    }
+  }
+  .buttons {
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+  }
+  .goalVarianceForm {
+    height: 100%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

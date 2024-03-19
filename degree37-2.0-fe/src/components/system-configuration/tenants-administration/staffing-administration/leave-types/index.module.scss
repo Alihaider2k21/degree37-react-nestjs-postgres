@@ -1,0 +1,80 @@
+.tableBorder {
+  border-collapse: separate !important;
+  border-spacing: 0px !important;
+}
+.tableBorder tr td:first-child {
+  border-left: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+.tableBorder tr td:last-child {
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+}
+.tableBorder tr:last-child td:first-child {
+  border-left: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-radius: 0px 0px 0px 10px;
+}
+.tableBorder tr:last-child td:last-child {
+  border-right: 1px solid #d9d9d9;
+  border-bottom: 1px solid #d9d9d9;
+  border-radius: 0px 0px 10px 0px;
+}
+.viewusertable {
+  tbody tr {
+    td {
+      max-width: 45%;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      word-break: break-all;
+    }
+  }
+}
+
+.filter {
+  width: 250px;
+
+  input {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0.5px solid #ececec;
+    font-size: medium;
+    position: relative;
+
+    &[type='text'] {
+      background-color: #f7f5f5;
+    }
+
+    &[type='date'] {
+      padding: 1rem;
+
+      &::-webkit-calendar-picker-indicator {
+        font-size: 1.5rem;
+      }
+    }
+
+    &[type='date'],
+    &[type='text'] {
+      height: 55px;
+    }
+
+    &::placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder {
+      color: red;
+    }
+
+    &:focus-visible,
+    &:not(:placeholder-shown) {
+      background-color: white;
+
+      &[type='date'] {
+        padding: 20px 20px 10px 20px;
+      }
+    }
+  }
+
+  label {
+    color: #a3a3a3 !important;
+  }
+}

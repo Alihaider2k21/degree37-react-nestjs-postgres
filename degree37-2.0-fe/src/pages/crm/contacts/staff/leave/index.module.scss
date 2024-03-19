@@ -1,0 +1,48 @@
+.container {
+  padding-top: 6rem;
+}
+
+.field {
+  position: relative;
+
+  label {
+    font-size: 16px !important;
+    color: #555555;
+  }
+
+  input + label {
+    top: 50% !important;
+  }
+
+  input:focus-visible + label,
+  input:not(:placeholder-shown) + label {
+    top: 25% !important;
+  }
+
+  input:focus-visible + label,
+  input:not(:placeholder-shown) + label,
+  textarea:focus-visible + label,
+  textarea:not(:placeholder-shown) + label {
+    font-size: 12px !important;
+  }
+}
+
+.fieldDate {
+  position: relative;
+
+  input:placeholder-shown {
+    padding-top: 10px !important;
+  }
+
+  label {
+    color: #555555;
+    top: 25% !important;
+    font-size: 12px !important;
+  }
+  .dateCross {
+    right: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}

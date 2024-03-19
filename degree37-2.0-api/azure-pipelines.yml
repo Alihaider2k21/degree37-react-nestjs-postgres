@@ -1,0 +1,142 @@
+# Docker
+# Build a Docker image
+# https://docs.microsoft.com/azure/devops/pipelines/languages/docker
+
+trigger:
+- master
+- test
+- uat
+
+resources:
+- repo: self
+
+variables:
+  #tag: '$(Build.BuildId)'
+  tag: 'latest'
+  AWS_ECR_IMAGE_URI_DEV: '938650285373.dkr.ecr.us-east-2.amazonaws.com/d37-api-2.0-dev'
+  AWS_ECR_IMAGE_DEV: 'd37-api-2.0-dev'
+  AWS_ECR_IMAGE_URI_TEST: '938650285373.dkr.ecr.us-east-2.amazonaws.com/d37-api-2.0-test'
+  AWS_ECR_IMAGE_TEST: 'd37-api-2.0-test'
+  AWS_ECR_IMAGE_URI_UAT: '938650285373.dkr.ecr.us-east-2.amazonaws.com/d37-api-2.0-uat'
+  AWS_ECR_IMAGE_UAT: 'd37-api-2.0-uat'
+
+
+stages:
+- stage: build
+  displayName: Build image
+  jobs:
+  - job: build
+    displayName: Building Docker Image
+    pool:
+      vmImage: ubuntu-latest
+    steps:  
+    - task: Docker@2
+      condition: eq(variables['Build.SourceBranchName'], 'master')
+      displayName: Build an image for dev
+      inputs:
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        buildContext: '$(System.DefaultWorkingDirectory)'
+        repository: $(AWS_ECR_IMAGE_URI_DEV)
+        tags: |
+          $(tag)
+    - task: Docker@2
+      condition: eq(variables['Build.SourceBranchName'], 'test')
+      displayName: Build an image for test
+      inputs:
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        buildContext: '$(System.DefaultWorkingDirectory)'
+        repository: $(AWS_ECR_IMAGE_URI_TEST)
+        tags: |
+          $(tag)
+    - task: Docker@2
+      condition: eq(variables['Build.SourceBranchName'], 'uat')
+      displayName: Build an image for uat
+      inputs:
+        command: build
+        dockerfile: '$(Build.SourcesDirectory)/Dockerfile'
+        buildContext: '$(System.DefaultWorkingDirectory)'
+        repository: $(AWS_ECR_IMAGE_URI_UAT)
+        tags: |
+          $(tag)
+    - script: docker images
+    - task: Bash@3
+      condition: eq(variables['Build.SourceBranchName'], 'master')
+      displayName: Save Docker Image Dev
+      inputs:
+        targetType: 'inline'
+        script: |
+          docker save $(AWS_ECR_IMAGE_URI_DEV):$(tag) -o $(Pipeline.Workspace)/MY_IMAGE_FILE.tar
+    - task: Bash@3
+      condition: eq(variables['Build.SourceBranchName'], 'test')
+      displayName: Save Docker Image Test
+      inputs:
+        targetType: 'inline'
+        script: |
+          docker save $(AWS_ECR_IMAGE_URI_TEST):$(tag) -o $(Pipeline.Workspace)/MY_IMAGE_FILE.tar
+    - task: Bash@3
+      condition: eq(variables['Build.SourceBranchName'], 'uat')
+      displayName: Save Docker Image Test
+      inputs:
+        targetType: 'inline'
+        script: |
+          docker save $(AWS_ECR_IMAGE_URI_UAT):$(tag) -o $(Pipeline.Workspace)/MY_IMAGE_FILE.tar
+    - task: PublishPipelineArtifact@1
+      condition: and(succeeded(), or(eq(variables['Build.SourceBranchName'], 'master'), eq(variables['Build.SourceBranchName'], 'test'), eq(variables['Build.SourceBranchName'], 'uat')))
+      inputs:
+        targetPath: '$(Pipeline.Workspace)/MY_IMAGE_FILE.tar'
+        artifact: 'MY_ARTIFACT'
+        publishLocation: 'pipeline'
+
+
+  - job: test
+    displayName: "Test"
+    steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: "18.x"
+            displayName: "Install Node.js"
+
+          - script: npm -g install yarn
+            displayName: "Install Package Manager"
+
+          - script: yarn install
+            displayName: "Install Dependencies"
+
+          - script: cp .env.example .env
+            displayName: "Copy environment file"
+         
+          # - script: yarn run test:cov
+          #   displayName: "Check code coverage"
+
+          - task: SonarQubePrepare@5
+            displayName: "Prepare SonarQube Analysis"
+            condition: eq(variables['Build.SourceBranchName'], 'master')
+            inputs:
+              SonarQube: "cc-sonarqube"
+              scannerMode: "CLI"
+              configMode: "manual"
+              cliProjectKey: "degree37-api-2.0"
+              cliProjectName: "Degree37 API 2.0"
+              cliSources: "src"
+              extraProperties: |
+                sonar.sourceEncoding=UTF-8
+                sonar.scm.provider=git
+                sonar.profile=node
+                sonar.coverage.exclusions=src/utility/regex.ts,src/api/*/migrations/*.ts,test/**/*,src/**/*.seeder.ts,src/**/*.factory.ts,src/**/*.enum.ts,**/*.spec.ts,**/*.seed.ts,**/*.migration.ts,**/migrations/**/*
+                sonar.exclusions=src/utility/regex.ts,src/api/*/migrations/*.ts,test/**/*,src/**/*.seeder.ts,src/**/*.factory.ts,src/**/*.enum.ts,**/*.spec.ts,**/*.seed.ts,**/*.migration.ts,**/migrations/**/*
+                sonar.javascript.lcov.reportPaths=coverage/lcov.info
+                sonar.javascript.coverage.reportPaths=coverage/clover.xml
+                sonar.clover.reportPath=coverage/clover.xml
+
+          - task: SonarQubeAnalyze@5
+            condition: eq(variables['Build.SourceBranchName'], 'master')
+            displayName: "Run SonarQube Analysis"
+
+          - task: SonarQubePublish@5
+            condition: eq(variables['Build.SourceBranchName'], 'master')
+            displayName: "Publish SonarQube Analysis"
+            inputs:
+              pollingTimeoutSec: "300"
+

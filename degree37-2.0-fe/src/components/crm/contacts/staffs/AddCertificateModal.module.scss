@@ -1,0 +1,240 @@
+@import '../../../../styles/Global/Variable.scss';
+.heading {
+  color: black;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-size: 30px;
+}
+.title {
+  padding-left: 40px;
+  font-size: 16px !important;
+}
+.modalMain {
+  width: 847px !important;
+  max-height: 488px !important;
+}
+.subHeading {
+  font-size: 16px;
+}
+
+.textSize {
+  font-size: 14px !important;
+}
+
+.modalPadding {
+  padding: 30px;
+}
+.btnDimensions {
+  height: 56px;
+  width: 124px;
+}
+
+.cancelBtn {
+  font-size: 14px !important;
+}
+
+.modalPaddingHeader {
+  padding: 30px 30px 0 30px;
+}
+.modalPaddingBody {
+  padding: 30px 30px 10px;
+}
+.modalPaddingFooter {
+  padding: 0 30px 30px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  .formItem {
+    // margin-right: 20px;
+    position: relative;
+    input[type='text'] {
+      border: 1px solid $neutral6;
+      border-radius: 8px;
+      min-height: 56px;
+      padding: 10px 20px 10px 56px;
+      transition: all 0.5s ease;
+      background-image: url(../../../../../public/images/Search.png);
+      background-size: auto;
+      background-repeat: no-repeat;
+      background-position: 8% 50%;
+      width: 326px;
+      font-size: 16px;
+    }
+
+    input[type='text']:hover {
+      border-color: $primary;
+    }
+
+    input[type='text']:focus {
+      background-color: unset;
+      outline: none;
+      box-shadow: unset;
+      border-color: $primary;
+    }
+
+    input[type='text']:focus::placeholder {
+      color: $neutral10 !important;
+    }
+
+    input[type='text']:hover::placeholder {
+      color: $neutral;
+    }
+
+    input[type='text']::placeholder {
+      color: $neutral10;
+    }
+  }
+}
+
+.tableView {
+  .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    margin-bottom: 20px;
+  }
+  .tableViewInner {
+    width: 100%;
+    .group {
+      margin-bottom: 20px;
+
+      .tabs-content {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        overflow: hidden;
+      }
+      .group-head {
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        padding: 0 30px;
+        background-color: $tableHeading;
+        border-radius: 10px 10px 0 0;
+        border: 1px solid $tableHeading;
+        position: relative;
+        h2 {
+          color: #000000;
+          font-size: 20px;
+          font-weight: 500;
+          margin: 0;
+        }
+        .header-action {
+          color: #005375;
+          font-size: 14px;
+          font-weight: 400;
+          position: absolute;
+          right: 20px;
+          top: 20px;
+        }
+      }
+
+      &.group-data {
+        .tabular-body {
+          background-color: $neutral9;
+          border-radius: 0px 0px 10px 10px !important;
+          overflow: hidden;
+          // padding: 0 24px;
+          border: 1px solid $neutral5;
+          > table {
+            > tbody {
+              tr {
+                td {
+                  background-color: transparent;
+                  font-size: 16px;
+                  color: #000000;
+                  font-weight: 400;
+                  min-height: 50px;
+                  padding: 13px 30px;
+                  border-top: 1px solid $neutral5;
+                  &.main-content {
+                    background-color: $neutral8;
+                  }
+                  .icon {
+                    display: block;
+                    text-align: end;
+                  }
+                  &.check {
+                    > .form-field {
+                      > .form-check-input {
+                        padding: 9px;
+                        &:focus {
+                          box-shadow: none;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.certificateModalForm {
+  .tagsCertificate {
+    margin: 20px auto 15px;
+    display: flex;
+    gap: 10px;
+    span {
+      background-color: #eeeeee !important;
+      padding: 5px 8px 5px 8px;
+      width: auto;
+      border-radius: 4px;
+      color: #005375;
+      font-family: Inter;
+      font-size: 12px !important;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+      display: flex;
+      align-items: center;
+
+      button {
+        background-color: transparent;
+        padding: 0;
+        border: 0;
+        outline: none;
+        width: auto;
+        height: 26px;
+        margin-left: 10px;
+        color: #a3a3a3;
+        font-size: 18px !important;
+      }
+    }
+  }
+  .dropdown-toggle:after {
+    top: 20px !important;
+  }
+  .react-datepicker__month-container {
+    z-index: 30000 !important;
+  }
+}
+
+.customDatepicker {
+  background-image: none !important;
+}
+
+.custom-datepicker-placeholder {
+  padding: 10px 20px !important;
+}
+
+.react-datepicker__triangle {
+  left: -100px !important;
+}
+
+.date-field .custom-datepicker {
+  padding: 10px 25px !important;
+}
+
+.react-datepicker-popper {
+  z-index: 2 !important;
+}
+
+.react-datepicker-wrapper {
+  width: 100%;
+}

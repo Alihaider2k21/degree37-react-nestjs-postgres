@@ -1,0 +1,170 @@
+.toggle-button {
+  display: inline-block;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-text {
+  color: black;
+  margin-right: 5px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.toggle-slider {
+  width: 40px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  background-color: #fafafa; /* Adjust the background color as needed */
+  border-radius: 10px; /* Adjust the border radius as needed */
+  position: relative;
+  border: 1px solid grey;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-slider:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-color: #007bff; /* Adjust the handle color as needed */
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+.toggle-input:checked + .toggle-label .toggle-slider {
+  background-color: #007bff; /* Adjust the active background color as needed */
+  border: none;
+}
+
+.toggle-input:checked + .toggle-label .toggle-slider:before {
+  transform: translateX(20px); /* Adjust the handle position as needed */
+  background-color: white;
+}
+
+.form-floating label {
+  color: #a5a9ac; /* Set initial label color to muted */
+  font-size: medium;
+}
+
+.form-floating:hover input {
+  border-radius: 6px;
+  border: 1px solid #007bff; /* Change border color on hover to blue */
+}
+.form-floating:hover select {
+  border-radius: 6px;
+  border: 1px solid #007bff; /* Change border color on hover to blue */
+}
+
+.form-floating:hover input + label {
+  color: black; /* Set label color to black on hover */
+}
+
+.form-floating > .form-select {
+  padding-top: 0.4rem !important;
+  color: #a5a9ac;
+}
+.form-floating:hover > .form-select {
+  color: black;
+}
+// .form-floating:hover select {
+
+//   background-image: url("./select-icon.svg");
+// }
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-container input {
+  padding-right: 30px; /* Add space for the SVG icon */
+}
+
+.input-container svg {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.full-width {
+  width: 100%;
+}
+
+.checkbox_labe {
+  display: block;
+  position: relative;
+  margin-right: 10px;
+  cursor: pointer;
+  // font-size: 22px;
+  line-height: 20px;
+  height: 20px;
+  width: 20px;
+  clear: both;
+}
+
+.checkbox_labe input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkbox_labe .checkbox_custom {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border-radius: 4px;
+  border: 1px solid #d9d9d9;
+}
+
+.checkbox_labe input:checked ~ .checkbox_custom {
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  opacity: 1;
+  border: 1px solid #d9d9d9;
+}
+
+.checkbox_labe .checkbox_custom::after {
+  position: absolute;
+  content: '';
+  left: 12px;
+  top: 12px;
+  height: 0px;
+  width: 0px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(0deg) scale(0);
+  -ms-transform: rotate(0deg) scale(0);
+  transform: rotate(0deg) scale(0);
+  opacity: 1;
+}
+
+.checkbox_labe input:checked ~ .checkbox_custom::after {
+  -webkit-transform: rotate(45deg) scale(1);
+  -ms-transform: rotate(45deg) scale(1);
+  transform: rotate(45deg) scale(1);
+  opacity: 1;
+  left: 6px;
+  top: 1px;
+  width: 6px;
+  height: 13px;
+  border: 0.5px solid rgba(85, 85, 85, 0.9);
+  border-width: 0 2px 2px 0;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.label:hover {
+  color: #000 !important;
+}

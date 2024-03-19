@@ -1,0 +1,97 @@
+.analytics {
+  display: flex;
+  align-items: start;
+  margin-bottom: 1rem;
+  min-width: 18rem;
+
+  tr {
+    td {
+      background-color: unset;
+    }
+
+    td {
+      vertical-align: top;
+
+      &:first-child {
+        width: 100%;
+      }
+      &:nth-child(2) {
+        width: 50%;
+      }
+    }
+
+    &:not(:first-child) td:first-child {
+      display: list-item;
+      margin-left: 1.5rem;
+      padding: 2px;
+    }
+
+    h2 {
+      font-size: 20px !important;
+    }
+
+    p {
+      font-size: 16px;
+      margin: 0;
+      color: #555555;
+    }
+  }
+}
+
+.imageMainContent {
+  padding-top: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 -5px 5px -5px #c5c4c4;
+  background-color: white;
+}
+.imageMainContent h4 {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000;
+  margin: unset;
+}
+.imageMainContent span {
+  font-size: 20px;
+  font-weight: 500;
+  color: #005375;
+}
+
+.pt_10px {
+  padding-top: 10px !important;
+}
+
+.scheduleShiftPopup {
+  max-width: 450px !important;
+}
+
+.labelselected {
+  font-size: 12px !important;
+  transform: translateY(-50%);
+  top: 18% !important;
+  display: 'inherit';
+}
+
+.datepicker {
+  padding: 15px 33px 15px 20px !important;
+}
+
+.fieldDate {
+  position: relative;
+
+  input:placeholder-shown {
+    padding-top: 10px !important;
+  }
+
+  label {
+    color: #555555;
+    top: 25% !important;
+    font-size: 12px !important;
+  }
+  .dateCross {
+    right: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}

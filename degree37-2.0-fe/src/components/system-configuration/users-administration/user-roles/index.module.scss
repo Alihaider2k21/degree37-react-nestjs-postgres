@@ -1,0 +1,83 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.disabledcolor {
+  color: #a3a3a3 !important;
+}
+
+p {
+  color: $neutral;
+}
+.formcontainer {
+  // margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.fullWidth {
+  width: 100%;
+}
+
+.maxContentWidth {
+  min-width: max-content;
+}
+
+.flexRow {
+  display: flex;
+  gap: 5px;
+  align-items: self-end;
+}
+
+.textarea {
+  min-height: calc(
+    9.5em + 0.75rem + calc(var(--bs-border-width) * 2)
+  ) !important;
+}
+
+.errorcolor {
+  font-size: 13px;
+  color: red;
+}
+.cancelbutton {
+  font-size: 14px;
+  margin-right: 20px;
+  color: #005375;
+  line-height: 24px;
+  cursor: pointer;
+}
+.cancelbutton:hover {
+  color: #387de5;
+}
+
+.rows {
+  width: 100%;
+}
+.saveandclose {
+  padding: 12px 23px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #387de5;
+  color: #387de5;
+  margin-right: 20px !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.saveandclose:hover {
+  background-color: #edf4ff !important;
+}
+
+.marginLeft {
+  margin-left: 0 !important;
+}
+
+.select {
+  color: var(--bs-body-color);
+}
+.textarealable {
+  top: 10% !important;
+  left: 12px !important;
+  font-size: 12px;
+}

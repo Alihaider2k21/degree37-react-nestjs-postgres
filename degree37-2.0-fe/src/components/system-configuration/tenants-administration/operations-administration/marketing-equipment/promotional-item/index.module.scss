@@ -1,0 +1,131 @@
+@import '../../../../../../styles/Global/Variable.scss';
+.promotion {
+  textarea {
+    border: 1px solid $neutral6;
+    border-radius: 8px;
+    min-height: 160px;
+    padding: 22px 20px 10px 20px;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    resize: none;
+    &:hover {
+      border-color: $primary;
+      &::placeholder {
+        font-size: 16px;
+        color: $neutral;
+      }
+    }
+    &:focus {
+      background-color: unset;
+      outline: none;
+      box-shadow: unset;
+      border-color: $primary;
+    }
+    &::placeholder {
+      font-size: 16px;
+      color: $neutral10;
+      transition: all 0.5s ease;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+}
+
+.footer {
+  max-width: 85%;
+  margin-left: auto;
+  padding-left: 17%;
+}
+.badge {
+  min-width: 80px;
+  min-height: 24px;
+  display: inline-flex;
+  margin: 0 3px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-size: 12px;
+  color: $secondary;
+  background-color: $neutral5;
+  font-weight: 400;
+  &.active {
+    background-color: #def0d7;
+    color: #5ca044;
+  }
+  &.inactive {
+    background-color: #fff2f2;
+    color: #ff1e1e;
+  }
+}
+.editPromotionalItem {
+  padding-left: 330px;
+  justify-content: space-between;
+}
+.archive {
+  color: #ff1e1e;
+  font-size: 14px;
+  cursor: pointer;
+  background: transparent;
+  &:hover {
+    color: #387de5;
+  }
+}
+.marginLeft {
+  margin-left: 0 !important;
+}
+
+.formFieldFilter {
+  width: 49%;
+  margin-bottom: 0 !important;
+}
+.checkbox {
+  display: flex;
+  align-items: center;
+  .toggle-text {
+    font-size: 16px;
+    color: $neutral;
+  }
+  label {
+    position: relative;
+    top: 2px;
+    bottom: unset;
+    left: unset;
+    right: unset;
+    transform: unset;
+    margin-left: 15px;
+    color: $neutral;
+  }
+  input {
+    padding: 5px;
+    &:disabled {
+      pointer-events: none;
+      border-color: $neutral5;
+      background-color: $neutral7;
+      color: $neutral2;
+      &:checked {
+        --bs-form-check-bg-image: url('../../../../../../../public/images/checkBlackTick.png');
+        background-size: auto;
+      }
+    }
+  }
+}
+.labelselected {
+  font-size: 12px !important;
+  transform: translateY(-50%);
+  top: 20% !important;
+  display: 'inherit';
+}
+.badgeStyles {
+  padding: 5px;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 30px;
+  color: white;
+  background-color: #387de5;
+  border-radius: 50% !important;
+}

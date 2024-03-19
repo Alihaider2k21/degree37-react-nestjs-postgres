@@ -1,0 +1,116 @@
+.tooltipContainer {
+  position: relative;
+
+  .icon {
+    cursor: pointer;
+  }
+
+  .tooltipText {
+    position: absolute;
+    bottom: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    width: max-content;
+    max-width: 320px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #72a3d0;
+
+    &.showTooltip {
+      transform: translateY(50px) translateX(25px);
+      &:before {
+        bottom: 22px;
+        left: -3%;
+        transform: translateX(-37%) rotate(-90deg);
+      }
+    }
+    &.tooltipTextDown {
+      top: 140%;
+      bottom: auto;
+      &:before {
+        top: -16px;
+        bottom: auto;
+        transform: translateX(-50%) rotate(0deg);
+        border-color: transparent transparent #72a3d0 transparent;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-180deg);
+      border-width: 8px;
+      border-style: solid;
+      border-color: transparent transparent #72a3d0 transparent;
+    }
+  }
+}
+
+.staffSetupTooltipContainer {
+  position: relative;
+
+  .icon {
+    cursor: pointer;
+  }
+
+  .staffSetupTooltipText {
+    position: absolute;
+    bottom: 350%;
+    left: -500%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 6px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    transition: opacity 0.3s ease-in-out;
+    pointer-events: none;
+    width: max-content;
+    max-width: 320px;
+    padding: 15px;
+    border-radius: 8px;
+    background: #72a3d0;
+    word-break: break-word;
+    display: block;
+    white-space: normal;
+
+    &.showTooltip {
+      transform: translateY(50px) translateX(25px);
+      &:before {
+        bottom: -15px;
+        left: 62px;
+        transform: translateX(-37%) rotate(-180deg);
+      }
+    }
+    &.tooltipTextDown {
+      top: 140%;
+      bottom: auto;
+      &:before {
+        top: -16px;
+        bottom: auto;
+        transform: translateX(-50%) rotate(0deg);
+        border-color: transparent transparent #72a3d0 transparent;
+      }
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%) rotate(-180deg);
+      border-width: 8px;
+      border-style: solid;
+      border-color: transparent transparent #72a3d0 transparent;
+    }
+  }
+}

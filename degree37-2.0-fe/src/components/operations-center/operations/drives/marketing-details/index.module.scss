@@ -1,0 +1,137 @@
+// MARKETING STYLING
+.marketingView {
+  :global {
+    .row {
+      .tableViewInner {
+        .group {
+          .banner {
+            border-width: 5px 0px 5px 0px;
+            border-style: dashed;
+            padding: 15px 30px;
+            .banner-heading {
+              font-size: 20px;
+              background-color: inherit;
+              margin-bottom: 0;
+            }
+            &.green {
+              background-color: #e0f6d9;
+              border-color: #5ca044;
+            }
+            .approved {
+              font-size: 14px;
+              margin-bottom: 0;
+              font-weight: 500;
+              display: flex;
+              align-items: center;
+              &:before {
+                content: '';
+                width: 18px;
+                height: 18px;
+                background-size: contain;
+                background-position: center;
+                background-image: url('../../../../../../public/images/approved.png');
+                margin-right: 5px;
+              }
+            }
+          }
+          .three-column-headings {
+            justify-content: space-between;
+            background-color: #ffffff;
+            span {
+              width: 30%;
+              background-color: inherit;
+              font-weight: 500;
+            }
+          }
+          .three-column-data {
+            justify-content: space-between;
+            background-color: #ffffff;
+            span {
+              width: 30%;
+              background-color: inherit;
+              display: block;
+              p {
+                font-size: 14px;
+                color: #555555;
+              }
+            }
+          }
+          .items-list {
+            ul {
+              width: 50%;
+              .heading {
+                background-color: #ffffff;
+                span {
+                  background-color: inherit;
+                  &:first-child {
+                    width: 65%;
+                  }
+                  &:last-child {
+                    width: 35%;
+                    text-align: center;
+                    display: block;
+                  }
+                }
+              }
+              li {
+                span {
+                  &:first-child {
+                    width: 65%;
+                  }
+                  &:last-child {
+                    width: 35%;
+                    background-color: #ffffff;
+                    display: block;
+                    text-align: center;
+                  }
+                }
+                :last-child {
+                  overflow: hidden;
+                }
+              }
+              &.left-items {
+                li {
+                  &:last-child {
+                    border-bottom-right-radius: 0 !important;
+                    overflow: hidden;
+                  }
+                }
+              }
+              &.right-items {
+                li {
+                  &:last-child {
+                    border-bottom-left-radius: 0 !important;
+                    overflow: hidden;
+                  }
+                }
+              }
+            }
+          }
+          .donor-communication {
+            .status {
+              gap: 0;
+              &:before {
+                content: '';
+                width: 10px;
+                height: 10px;
+                border-radius: 10px;
+                margin-right: 5px;
+              }
+              &.approved {
+                &:before {
+                  background-color: #5ca044;
+                }
+              }
+              &.pending {
+                &:before {
+                  background-color: #ffbf42;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// MARKETING STYLING

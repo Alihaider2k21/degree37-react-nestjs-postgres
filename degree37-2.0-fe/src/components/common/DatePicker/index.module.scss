@@ -1,0 +1,41 @@
+.dateRangePicker {
+  width: 18rem;
+  &::placeholder {
+    color: #a3a3a3;
+  }
+}
+
+.dateRangePickerCloseIcon {
+  right: 2.4rem;
+  &::after {
+    background-color: white;
+    color: hsl(0, 0%, 80%);
+    font-size: 1.3rem;
+  }
+  &:hover {
+    &::after {
+      color: hsl(0, 0%, 60%);
+    }
+  }
+}
+
+.label {
+  font-size: 12px !important;
+  transform: translateY(-50%);
+  top: 19% !important;
+  display: 'inherit';
+}
+
+.fieldDate {
+  position: relative;
+
+  input:placeholder-shown {
+    padding-top: 10px !important;
+  }
+
+  label {
+    color: #555555;
+    top: 25% !important;
+    font-size: 12px !important;
+  }
+}

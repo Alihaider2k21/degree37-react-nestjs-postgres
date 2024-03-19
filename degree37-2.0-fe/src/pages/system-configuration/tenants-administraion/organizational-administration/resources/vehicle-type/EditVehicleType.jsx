@@ -1,0 +1,25 @@
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import Layout from '../../../../../../components/common/layout/index';
+import VehicleTypeUpsert from '../../../../../../components/system-configuration/tenants-administration/organizational-administration/resources/vehicle-type/VehicleTypeUpsert';
+import CheckPermission from '../../../../../../helpers/CheckPermissions';
+import Permissions from '../../../../../../enums/PermissionsEnum';
+import NotFoundPage from '../../../../../not-found/NotFoundPage';
+
+const EditVehicleType = () => {
+  const { id } = useParams();
+  const hasPermission = CheckPermission([
+    Permissions.ORGANIZATIONAL_ADMINISTRATION.RESOURCES.VEHICLE_TYPE.WRITE,
+  ]);
+  if (hasPermission) {
+    return (
+      <Layout>
+        <VehicleTypeUpsert vehicleTypeId={id} />
+      </Layout>
+    );
+  } else {
+    return <NotFoundPage />;
+  }
+};
+
+export default EditVehicleType;

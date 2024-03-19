@@ -1,0 +1,105 @@
+@import '../../../../../styles/Global/Variable.scss';
+
+.error {
+  font-size: 13px;
+  color: $warning5;
+}
+
+.cancelbutton {
+  font-size: 14px;
+  margin-right: 20px;
+  color: #005375;
+  line-height: 24px;
+  cursor: pointer;
+}
+.cancelbutton:hover {
+  color: #387de5 !important;
+}
+
+.createbtn:disabled {
+  pointer-events: none !important;
+  border-color: #f5f5f5 !important;
+  background-color: #f5f5f5 !important;
+  color: #a3a3a3 !important;
+}
+.btn_classification {
+  border: 0;
+  width: 240px;
+  height: 56px;
+}
+.archivebtn {
+  font-size: 14px;
+  padding: 3px;
+  margin-left: 30px !important;
+}
+.archivebtn:active {
+  text-decoration: none !important;
+}
+.classificationFooter {
+  padding-left: 330px;
+}
+
+.groupRound {
+  background-color: #fff !important;
+  border-radius: 0px 0 10px 10px !important;
+  overflow: hidden;
+  ul {
+    li {
+      &:last-child {
+        border-radius: 0 0 10px 10px;
+        overflow: hidden;
+      }
+    }
+  }
+}
+.createBtn {
+  margin-right: 30px !important;
+}
+
+.filter {
+  width: 250px;
+
+  input {
+    width: 100%;
+    border-radius: 0.5rem;
+    border: 0.5px solid #ececec;
+    font-size: medium;
+    position: relative;
+
+    &[type='text'] {
+      background-color: #f7f5f5;
+    }
+
+    &[type='date'] {
+      padding: 1rem;
+
+      &::-webkit-calendar-picker-indicator {
+        font-size: 1.5rem;
+      }
+    }
+
+    &[type='date'],
+    &[type='text'] {
+      height: 55px;
+    }
+
+    &::placeholder,
+    &:-ms-input-placeholder,
+    &::-ms-input-placeholder {
+      color: red;
+    }
+
+    &:focus-visible,
+    &:not(:placeholder-shown) {
+      background-color: white;
+
+      &[type='date'] {
+        padding: 20px 20px 10px 20px;
+      }
+    }
+  }
+
+  label {
+    color: #a3a3a3 !important;
+  }
+}

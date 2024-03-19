@@ -1,0 +1,87 @@
+@import '../../../styles/Global/Variable.scss';
+
+.modalbody {
+  height: 296px;
+  width: 344px !important;
+  display: flex;
+  // gap: 2rem;
+}
+.successicon {
+  width: 75px;
+  height: 75px;
+  background-color: rgb(3, 180, 3);
+  border-radius: 50%;
+  border: 7px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -35px;
+}
+.nobtn {
+  width: 132px !important;
+  height: 56px !important;
+  padding: 16px 32px !important;
+  justify-content: center !important;
+  align-items: center !important;
+  font-size: 18px !important;
+  font-weight: 400px !important;
+  line-height: 24px !important;
+}
+.nobtnhover:hover {
+  background-color: #edf4ff !important;
+}
+.warning {
+  width: 88px;
+  height: 88px;
+  background-color: #ff1e1e;
+  border-radius: 50%;
+  border: 7px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -35px;
+}
+.primary {
+  width: 88px;
+  height: 88px;
+  background-color: #387de5;
+  border-radius: 50%;
+  border: 7px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -35px;
+}
+.heading {
+  font-size: 32px !important;
+  margin-top: 49px;
+  color: #2d2d2e !important;
+  font-weight: 500 !important;
+  margin-bottom: 11px;
+}
+.bodytext {
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 400 !important;
+  line-height: normal;
+  color: #a3a3a3 !important;
+  display: flex !important;
+  justify-content: center !important;
+}
+.submitbutton {
+  min-height: 40px;
+  width: 40% !important;
+}
+.cancelButton {
+  border-color: #387de5;
+  color: #387de5;
+  background-color: transparent;
+}
+.text_width {
+  width: 80% !important;
+}

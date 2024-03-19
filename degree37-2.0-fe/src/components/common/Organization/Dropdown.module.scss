@@ -1,0 +1,25 @@
+@import '../../../styles/Global/Variable.scss';
+
+.dropdown {
+  position: relative;
+  input {
+    padding-top: 10px !important;
+  }
+  img {
+    position: absolute;
+    right: 0;
+    top: 25px;
+    right: 10px;
+  }
+  .clear {
+    position: absolute;
+    right: 2.2rem;
+    top: 1rem;
+    font-size: 1rem;
+    color: hsl(0, 0%, 80%);
+    cursor: pointer;
+    &:hover {
+      color: hsl(0, 0%, 60%);
+    }
+  }
+}

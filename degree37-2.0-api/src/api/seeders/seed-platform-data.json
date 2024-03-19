@@ -1,0 +1,121 @@
+{
+  "applications": [
+    {
+      "name": "System Configuration",
+      "modules": [
+        {
+          "name": "Dashboard",
+          "code": "platform_dashboard",
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "010101"
+            },
+            {
+              "name": "Write",
+              "code": "010102"
+            },
+            {
+              "name": "Archive",
+              "code": "010103"
+            }
+          ]
+        },
+        {
+          "name": "Tenant Management",
+          "code": "tenant_management",
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "010301"
+            },
+            {
+              "name": "Write",
+              "code": "010302"
+            },
+            {
+              "name": "Archive",
+              "code": "010303"
+            },
+            {
+              "name": "Add Config",
+              "code": "010304"
+            },
+            {
+              "name": "Login as Tenant",
+              "code": "010305"
+            }
+          ]
+        },
+        {
+          "name": "Product Licensing",
+          "code": "platform_product_licensing",
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "010401"
+            },
+            {
+              "name": "Write",
+              "code": "010402"
+            },
+            {
+              "name": "Archive",
+              "code": "010403"
+            }
+          ]
+        },
+        {
+          "name": "User Administration",
+          "code": "user_administration",
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "010501"
+            },
+            {
+              "name": "Write",
+              "code": "010502"
+            },
+            {
+              "name": "Archive",
+              "code": "010503"
+            },
+            {
+              "name": "Update Password",
+              "code": "010504"
+            }
+          ]
+        },
+        {
+          "name": "Roles Administration",
+          "code": "platform_roles_administration",
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "010601"
+            },
+            {
+              "name": "Write",
+              "code": "010602"
+            },
+            {
+              "name": "Archive",
+              "code": "010603"
+            }
+          ]
+        },
+        {
+          "name": "Log and Event Management",
+          "code": "log_and_event_management",
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "010701"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

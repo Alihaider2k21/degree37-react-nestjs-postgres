@@ -1,0 +1,87 @@
+@import '../../../styles/Global/Variable.scss';
+
+.accountFilters {
+  .outlineBtn {
+    color: unset !important;
+    background-color: unset !important;
+    border-color: unset !important;
+  }
+  .nameInputField {
+    height: 56px;
+    border: 1px solid #e4e4e4;
+    outline: none !important;
+  }
+  .outlineBtn:hover {
+    background-color: rgba(104, 174, 255, 0.2) !important;
+  }
+  .react-select__menu-list {
+    max-height: 250px !important;
+    overflow-y: auto;
+  }
+  .more-options {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #005375 !important;
+  }
+  .selectFilters {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    // margin: unset;
+    border-top: 1px solid #dadada;
+  }
+}
+.clear-btn {
+  font-size: 18px;
+  color: #a3a3a3;
+  border: 0px;
+}
+.label:hover {
+  color: #000 !important;
+}
+.account {
+  .subHeading {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 1rem;
+  }
+
+  .form-field.checkbox {
+    width: 33%; /* Set the width to 33% */
+    display: inline-flex; /* Display inline */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 0; /* Remove default margin */
+    &:not(:last-child) {
+      margin-right: 20px; /* Add some spacing between checkboxes */
+    }
+    .form-check-input {
+      width: 22px;
+      height: 22px;
+    }
+    .form-check-label {
+      margin-left: 5px;
+    }
+    .error {
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+  :global {
+    .form-field.checkbox.cc label {
+      margin-left: 0px !important;
+    }
+  }
+}
+
+.drop > li > a:hover {
+  background-color: #1967d2 !important;
+  color: white !important;
+  // border: 1px solid #000 !important;
+}

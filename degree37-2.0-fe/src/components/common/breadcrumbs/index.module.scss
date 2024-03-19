@@ -1,0 +1,49 @@
+@import '../../../styles/Global/Variable.scss';
+
+.breadcrumbs {
+  h1 {
+    font-size: 24px;
+    color: $neutral;
+    margin-bottom: 0;
+    font-weight: 500;
+  }
+  .breadcrumbsLabels {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    > span {
+      display: flex;
+      align-items: center;
+    }
+    a {
+      display: flex;
+      :global {
+        .text {
+          font-size: 12px;
+          color: $neutral10;
+          margin: 0 5px;
+        }
+      }
+      &:first-child {
+        :global {
+          .text {
+            margin-left: 0;
+          }
+        }
+      }
+      &:last-child {
+        :global {
+          .text {
+            color: $secondary;
+          }
+        }
+      }
+    }
+    :global {
+      .icon {
+        position: relative;
+        bottom: 2px;
+      }
+    }
+  }
+}

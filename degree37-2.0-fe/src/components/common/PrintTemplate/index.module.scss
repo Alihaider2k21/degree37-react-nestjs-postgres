@@ -1,0 +1,23 @@
+.printTemplate {
+  padding: 10px;
+  :global {
+    h2 {
+      text-align: center;
+    }
+    .info {
+      display: flex;
+      align-items: center;
+      justify-content: right;
+      margin-bottom: 15px;
+      gap: 10px;
+      > div {
+        h5 {
+          margin-bottom: 10px;
+          :last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

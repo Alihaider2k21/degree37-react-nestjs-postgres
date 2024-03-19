@@ -1,0 +1,46 @@
+$primaryColor: #880808;
+$sidbarText: #005375;
+.sidebarText {
+  text-decoration: none !important;
+  color: $sidbarText !important;
+  &:hover {
+    background: $primaryColor;
+    color: white !important;
+  }
+}
+.active {
+  background: $primaryColor !important;
+  color: white !important;
+}
+
+// .sidebar {
+// }
+// .nav-pills {
+//     li {
+//         &:hover {
+//             background-color: blue;
+//         }
+//     }
+// }
+
+.sidebar {
+  background-color: #f2f2f2;
+  width: 250px;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-menu-item {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu-item a {
+  text-decoration: none;
+  color: #333;
+}

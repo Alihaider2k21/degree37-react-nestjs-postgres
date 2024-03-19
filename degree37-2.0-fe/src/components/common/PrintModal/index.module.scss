@@ -1,0 +1,102 @@
+@import '../../../styles/Global/Variable.scss';
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease 0s;
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    .popupInner {
+      bottom: 0;
+    }
+  }
+  .popupInner {
+    bottom: 100%;
+    position: relative;
+    transition: all 1s ease;
+    max-width: 475px;
+    width: 100%;
+    padding: 90px 30px 30px;
+    background-color: $neutral9;
+    border-radius: 10px;
+    .icon {
+      position: absolute;
+      top: -50px;
+      left: 0;
+      right: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      :global {
+        img {
+          border: 6px solid #fff;
+          border-radius: 100px;
+        }
+      }
+    }
+    .content {
+      text-align: center;
+      h3 {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: $neutral;
+      }
+      p {
+        font-size: 16px;
+        color: $neutral10;
+        margin-bottom: 0;
+      }
+      form {
+        margin-top: 30px;
+      }
+      .buttons {
+        margin-top: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        button {
+          min-width: 132px;
+          width: 45%;
+        }
+      }
+    }
+  }
+}
+
+.fieldDate {
+  position: relative;
+
+  input:placeholder-shown {
+    padding-top: 10px !important;
+  }
+
+  label {
+    color: #555555;
+    top: 25% !important;
+    font-size: 12px !important;
+  }
+  .dateCross {
+    right: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+.hidden {
+  display: none !important;
+}

@@ -1,0 +1,264 @@
+// @import '../../../styles/Global/Variable.scss';
+@import '../../../../../styles/Global/Variable.scss';
+.current {
+  td:first-child {
+    position: relative;
+
+    &::before {
+      content: '';
+      z-index: 1;
+      background-color: $primary;
+      height: 100%;
+      width: 20px;
+      top: 0;
+      left: 0;
+    }
+
+    &::after {
+      content: 'Current';
+      color: white;
+      font-size: 12px;
+      white-space: nowrap;
+      z-index: 2;
+      left: -12px;
+      top: 40%;
+      transform: rotate(-90deg);
+    }
+
+    &::before,
+    &::after {
+      position: absolute;
+    }
+  }
+}
+.verticalLabelContainer {
+  height: 100%;
+  left: 0;
+  padding-inline: 3px;
+  background-color: $primary;
+  color: $neutral9;
+
+  .verticalLabelText {
+    writing-mode: vertical-lr;
+    transform: rotate(-180deg);
+    font-size: 12px;
+    font-weight: 400;
+  }
+}
+
+.tableListingMain {
+  .table-responsive {
+    min-height: 420px;
+    padding-bottom: 30px;
+
+    table {
+      margin-bottom: 0;
+      box-shadow: 0px 10px 30px 3px rgba(5, 16, 55, 0.1);
+      thead {
+        tr {
+          background-color: $neutral11;
+          border-bottom: 1px solid $neutral4;
+          th {
+            background-color: $neutral11;
+            padding: 24px 0px 24px 40px;
+            font-size: 16px;
+            font-weight: 500;
+            color: $neutral;
+            border: unset;
+            .sort-icon {
+              cursor: pointer;
+              display: inline;
+              margin-left: 10px;
+            }
+            .inliner {
+              display: flex;
+              align-items: center;
+              span.title {
+                display: inline-flex;
+                width: max-content;
+              }
+            }
+            &:last-child {
+              padding: 24px 20px 24px 20px;
+            }
+          }
+        }
+      }
+      tbody {
+        tr {
+          border: unset;
+          border-bottom: 1px solid $neutral4;
+          td {
+            padding: 30px 0px 30px 40px;
+            vertical-align: middle;
+            font-size: 14px;
+            color: $neutral;
+            border: unset;
+            --bs-table-accent-bg: unset;
+            --bs-table-color-type: unset;
+            --bs-table-bg-type: unset;
+            word-break: break-word;
+            &.options {
+              .optionsIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+              }
+              .dropdown-menu {
+                border-radius: 0;
+                padding: 0;
+                // margin-top: 35px;
+                margin: 13px 0px !important;
+                border: none;
+                background-color: #ffffff;
+                background: #fff;
+                // inset: 0px auto auto 0px !important;
+
+                /* Shadow/6px */
+                box-shadow: 0px 6px 12px 0px rgba(171, 190, 209, 0.3);
+                li {
+                  a {
+                    min-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px;
+                    border-bottom: 1px solid #f5f7fa;
+                    font-size: 12px;
+                    &:hover {
+                      background-color: #d8e8ff;
+                    }
+                  }
+                  &:last-child {
+                    a {
+                      border-bottom: none;
+                    }
+                  }
+                }
+              }
+            }
+            .dropdown-menu::before {
+              content: '';
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0 10px 10px 10px;
+              border-color: transparent transparent #f3f6fb transparent;
+              position: absolute;
+              top: -12px;
+              left: 47%;
+              margin-left: -5px;
+              z-index: 2;
+            }
+            .dropdown-menu[data-popper-placement='top'] {
+              &:before {
+                content: '';
+                top: auto !important;
+                transform: rotate(180deg);
+                bottom: -10px;
+              }
+            }
+            .badge {
+              min-width: 80px;
+              min-height: 24px;
+              display: inline-flex;
+              margin: 5px;
+              align-items: center;
+              justify-content: center;
+              // border-radius: 4px;
+              font-size: 12px;
+              color: $secondary;
+              background-color: $neutral5;
+              font-weight: 400;
+              &.active {
+                background-color: #def0d7;
+                color: #5ca044;
+              }
+              &.inactive {
+                background-color: #fff2f2;
+                color: #ff1e1e;
+              }
+              &.Green {
+                background-color: #def0d7;
+                color: #5ca044;
+              }
+              &.Yellow {
+                background-color: #fff8ea;
+                color: #ffaf14;
+              }
+              &.Red {
+                background-color: #fff2f2;
+                color: #ff1e1e;
+              }
+              &.Blue {
+                background-color: #b1d9ff;
+                color: #0059ae;
+              }
+              &.Lavender {
+                background-color: #e6e6fa;
+                color: #5c5cbf;
+              }
+              &.Grey {
+                background-color: #aabdd0;
+                color: #4c555e;
+              }
+            }
+            &:last-child {
+              padding: 30px 20px 30px 20px;
+            }
+          }
+          .no-data {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+.tableListingMain {
+  &.long-table {
+    .table-responsive {
+      table {
+        thead {
+          tr {
+            th {
+              padding: 24px 0px 24px 16px;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              padding: 30px 0px 30px 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.tableListingMain.long-table {
+  .table {
+    tr {
+      > td {
+        .dropdown-menu {
+          min-width: 7rem;
+        }
+      }
+    }
+  }
+}
+
+//last td in setting table apply padding-right
+.tableListingMain.long-table {
+  .table {
+    tr {
+      > td {
+        &:last-child {
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+.mainContent {
+  height: 100%;
+  :global {
+    .mainContentInner {
+      height: 90%;
+    }
+  }
+  .industryCategoriesForm {
+    height: 100%;
+    display: flex;
+    flex-flow: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}

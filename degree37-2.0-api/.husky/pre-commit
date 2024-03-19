@@ -1,0 +1,5 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "************************************ Running Tests Please Wait ************************************"
+npm --silent --version >/dev/null 2>&1 && npm run test:cov && npm run lint

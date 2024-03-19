@@ -1,0 +1,128 @@
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+      - uat
+      - main
+      - test
+
+  paths:
+    include:
+      - "*"
+    exclude:
+      - "README.md"
+
+pr:
+  branches:
+    include:
+      - master
+      - uat
+      - main
+      - test
+        
+
+pool:
+  vmImage: "ubuntu-latest"
+
+stages:
+  - stage: buildPackage
+    displayName: "Build and Package"
+    jobs:
+      - job: build
+        displayName: "Build, Test & Package"
+        steps:
+          - task: NodeTool@0
+            inputs:
+              versionSpec: "18.x"
+            displayName: "Install Node.js"
+
+          - task: DownloadSecureFile@1
+            name: envProduction
+            inputs:
+              secureFile: 'env'
+         
+          - task: Bash@3
+            condition: eq(variables['Build.SourceBranchName'], 'master')
+            inputs:
+              targetType: 'inline'
+              script: cat $(envProduction.secureFilePath) > $(System.DefaultWorkingDirectory)/.env && cat .env
+            displayName: "Preparing env for Dev"
+
+          - task: Bash@3
+            condition: eq(variables['Build.SourceBranchName'], 'test')
+            inputs:
+              targetType: 'inline'
+              script: cat $(envProduction.secureFilePath) > $(System.DefaultWorkingDirectory)/.env && sed -i "s/dev-new-api.degree37.io/test-new-api.degree37.io/g" .env && sed -i "s/keycloak-dev/keycloak-test/g" .env && sed -i "s/development/test/g" .env && cat .env
+            displayName: "Preparing env for Test"
+          
+          - task: Bash@3
+            condition: eq(variables['Build.SourceBranchName'], 'uat')
+            inputs:
+              targetType: 'inline'
+              script: cat $(envProduction.secureFilePath) > $(System.DefaultWorkingDirectory)/.env && sed -i "s/dev-new-api.degree37.io/uat-new-api.degree37.io/g" .env && sed -i "s/keycloak-dev/keycloak-uat/g" .env && sed -i "s/development/uat/g" .env && cat .env
+            displayName: "Preparing env for UAT"
+          
+          - task: Bash@3
+            condition: eq(variables['Build.SourceBranchName'], 'main')
+            inputs:
+              targetType: 'inline'
+              script: cat $(envProduction.secureFilePath) > $(System.DefaultWorkingDirectory)/.env && sed -i "s/dev-new-api.degree37.io/new-api.degree37.io/g" .env && sed -i "s/keycloak-dev/keycloak/g" .env && sed -i "s/development//g" .env && cat .env
+            displayName: "Preparing env for Production"
+            
+          - script: npm install -g yarn
+            displayName: "Installing Yarn "
+
+          - script: yarn install
+            displayName: "Installing Yarn dependencies"
+         # - script: npm run test:coverage
+         #   displayName: "Check code coverage"
+
+          # - script: npm run lint
+          #   displayName: "Checking coding standards"
+
+          - script: yarn build
+            displayName: "Check Build Generation"
+          
+          - task: SonarQubePrepare@5
+            displayName: "Prepare SonarQube Analysis"
+            condition: eq(variables['Build.SourceBranchName'], 'master')
+            inputs:
+              SonarQube: "cc-sonarqube"
+              scannerMode: "CLI"
+              configMode: "manual"
+              cliProjectKey: "degree37-admin-2.0"
+              cliProjectName: "Degree37 Admin 2.0"
+              cliSources: "src"
+              extraProperties: |
+                sonar.sourceEncoding=UTF-8
+                sonar.scm.provider=git
+                sonar.profile=node
+                sonar.coverage.exclusions=src/utility/regex.ts,src/api/*/migrations/*.ts,test/**/*,src/**/*.seeder.ts,src/**/*.factory.ts,src/**/*.enum.ts,**/*.spec.ts,**/*.seed.ts,**/*.migration.ts,**/migrations/**/*
+                sonar.exclusions=src/utility/regex.ts,src/api/*/migrations/*.ts,test/**/*,src/**/*.seeder.ts,src/**/*.factory.ts,src/**/*.enum.ts,**/*.spec.ts,**/*.seed.ts,**/*.migration.ts,**/migrations/**/*
+                sonar.javascript.lcov.reportPaths=coverage/lcov.info
+                sonar.javascript.coverage.reportPaths=coverage/clover.xml
+                sonar.clover.reportPath=coverage/clover.xml
+
+          - task: SonarQubeAnalyze@5
+            condition: eq(variables['Build.SourceBranchName'], 'master')
+            displayName: "Run SonarQube Analysis"
+
+          - task: SonarQubePublish@5
+            condition: eq(variables['Build.SourceBranchName'], 'master')
+            displayName: "Publish SonarQube Analysis"
+            inputs:
+              pollingTimeoutSec: "300"
+          - task: CopyFiles@2
+            inputs:
+              sourceFolder: '$(Build.SourcesDirectory)'
+              contents: |
+                build/**/*
+              targetFolder: '$(Build.ArtifactStagingDirectory)/build'
+            displayName: 'Copy project files'
+          - task: PublishPipelineArtifact@1
+            inputs:
+              artifactName: degree37-fe
+              targetPath: '$(Build.ArtifactStagingDirectory)/build'
+              publishLocation: 'pipeline'
+            displayName: 'Publish npm artifact'

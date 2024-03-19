@@ -1,0 +1,19 @@
+.fieldDate {
+  position: relative;
+
+  input:placeholder-shown {
+    padding-top: 10px !important;
+  }
+
+  label {
+    color: #555555;
+    top: 25% !important;
+    font-size: 12px !important;
+  }
+  .dateCross {
+    right: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}

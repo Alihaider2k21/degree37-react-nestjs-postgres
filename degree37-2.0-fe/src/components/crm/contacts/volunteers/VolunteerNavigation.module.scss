@@ -1,0 +1,26 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.icon {
+  background-color: $secondary2;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.name,
+.role {
+  font-weight: 500;
+  color: $neutral;
+  margin-bottom: 0;
+}
+
+.name {
+  font-size: 24px;
+}
+
+.role {
+  color: $tertiary;
+  font-size: 20px;
+}

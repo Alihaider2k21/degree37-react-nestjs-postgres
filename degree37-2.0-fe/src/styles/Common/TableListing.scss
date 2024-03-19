@@ -1,0 +1,445 @@
+@import '../Global/Variable.scss';
+
+// MAIN CONTENT
+.mainContent {
+  height: 100%;
+  .mainContentInner {
+    position: relative;
+    padding: 10px 30px 90px 30px;
+
+    &.form-container {
+      min-height: calc(92vh - 145px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 85px 20px 160px !important;
+
+      .position-btn {
+        position: absolute;
+        top: 0px;
+      }
+      .right-btn {
+        right: 20px;
+      }
+
+      & > form {
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 100%;
+      }
+    }
+
+    > .buttons {
+      display: flex;
+      justify-content: right;
+    }
+  }
+}
+// MAIN CONTENT
+
+// TABLE LISTINGG STYLING
+.table-listing-main {
+  margin-top: 15px;
+  .table-responsive {
+    min-height: 515px;
+    padding-bottom: 30px;
+
+    table {
+      margin-bottom: 0;
+      box-shadow: 0px 10px 30px 3px rgba(5, 16, 55, 0.1);
+      thead {
+        tr {
+          background-color: $neutral11;
+          border-bottom: 1px solid $neutral4;
+          th {
+            background-color: $neutral11;
+            padding: 24px 0px 24px 40px;
+            font-size: 16px;
+            font-weight: 500;
+            color: $neutral;
+            white-space: nowrap;
+            max-width: 100% !important;
+            border: unset;
+            .sort-icon {
+              cursor: pointer;
+              display: inline;
+              margin-left: 10px;
+            }
+            .inliner {
+              display: flex;
+              align-items: center;
+              span.title {
+                display: inline-flex;
+                width: max-content;
+              }
+            }
+            &:last-child {
+              padding: 24px 20px 24px 20px;
+              width: 150px !important;
+              text-align: right;
+            }
+          }
+        }
+      }
+      tbody,
+      tfoot {
+        tr {
+          border: unset;
+          border-bottom: 1px solid $neutral4;
+          .schedule-card-row {
+            padding: 0 !important;
+            vertical-align: top;
+            min-width: 12rem;
+            max-width: 12rem;
+          }
+          .no-card-row {
+            min-width: 12rem;
+            max-width: 12rem;
+          }
+          td {
+            padding: 30px 0px 30px 40px;
+            vertical-align: middle;
+            font-size: 14px;
+            color: $neutral;
+            border: unset;
+            --bs-table-accent-bg: unset;
+            --bs-table-color-type: unset;
+            --bs-table-bg-type: unset;
+            white-space: nowrap;
+            &.options {
+              .optionsIcon {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+              }
+              .dropdown-menu {
+                border-radius: 0;
+                padding: 0;
+                // margin-top: 35px;
+                margin: 13px 0px !important;
+                border: none;
+                background-color: #ffffff;
+                background: #fff;
+                // inset: 0px auto auto 0px !important;
+
+                /* Shadow/6px */
+                box-shadow: 0px 6px 12px 0px rgba(171, 190, 209, 0.3);
+                li {
+                  a {
+                    min-height: 40px;
+                    display: flex;
+                    align-items: center;
+                    padding: 0 15px;
+                    border-bottom: 1px solid #f5f7fa;
+                    font-size: 12px;
+                    &:hover {
+                      background-color: #d8e8ff;
+                    }
+                  }
+                  &:last-child {
+                    a {
+                      border-bottom: none;
+                    }
+                  }
+                }
+              }
+            }
+            .dropdown-menu::before {
+              content: '';
+              width: 0;
+              height: 0;
+              border-style: solid;
+              border-width: 0 10px 10px 10px;
+              border-color: transparent transparent #f3f6fb transparent;
+              position: absolute;
+              top: -12px;
+              left: 47%;
+              margin-left: -5px;
+              z-index: 2;
+            }
+            .dropdown-menu[data-popper-placement='top'] {
+              &:before {
+                content: '';
+                top: auto !important;
+                transform: rotate(180deg);
+                bottom: -10px;
+              }
+            }
+            .badge {
+              min-width: 80px;
+              min-height: 24px;
+              display: inline-flex;
+              margin: 5px;
+              align-items: center;
+              justify-content: center;
+              border-radius: 4px;
+              font-size: 12px;
+              color: $secondary;
+              background-color: $neutral5;
+              font-weight: 400;
+              &.active {
+                background-color: #def0d7;
+                color: #5ca044;
+              }
+              &.inactive {
+                background-color: #fff2f2;
+                color: #ff1e1e;
+              }
+              &.Green {
+                background-color: #def0d7;
+                color: #5ca044;
+              }
+              &.Yellow {
+                background-color: #fff8ea;
+                color: #ffaf14;
+              }
+              &.Red {
+                background-color: #fff2f2;
+                color: #ff1e1e;
+              }
+              &.Blue {
+                background-color: #b1d9ff;
+                color: #0059ae;
+              }
+              &.Lavender {
+                background-color: #e6e6fa;
+                color: #5c5cbf;
+              }
+              &.Grey {
+                background-color: #aabdd0;
+                color: #4c555e;
+              }
+            }
+            &:last-child {
+              padding: 30px 20px 30px 20px;
+              width: 150px !important;
+              text-align: right;
+            }
+            span {
+              &.linkable {
+                color: $secondary;
+                cursor: pointer;
+                &:hover {
+                  text-decoration: underline;
+                }
+              }
+            }
+            .schedule-card {
+              background-color: #d9d9d9;
+              border-radius: 10px;
+              border: 0px, 0px, 1px, 0px;
+              padding: 10px 10px 1px 10px;
+              margin: 10px 5px;
+            }
+            .future-schedule-card {
+              border-radius: 10px;
+              border: 0px, 0px, 1px, 0px;
+              padding: 10px 10px 1px 10px;
+              background-color: #def0d7;
+              margin: 10px 5px;
+            }
+            .on-leave-schedule-card {
+              background-color: #fff2f2;
+              border-radius: 10px;
+              border: 0px, 0px, 1px, 0px;
+              padding: 10px 10px 1px 10px;
+              margin: 10px 5px;
+              font-weight: 500;
+              height: 249px;
+              .on-leave-text {
+                color: #ff1e1e;
+              }
+            }
+          }
+          .no-data {
+            text-align: center !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+table {
+  .dropdown-menu::before {
+    content: '';
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    border-color: transparent transparent #f3f6fb transparent;
+    position: absolute;
+    top: -12px;
+    left: 47%;
+    margin-left: -5px;
+    z-index: 2;
+  }
+  .dropdown-menu[data-popper-placement='top'] {
+    &:before {
+      content: '';
+      top: auto !important;
+      transform: rotate(180deg);
+      bottom: -10px;
+    }
+  }
+}
+
+.btn-dropdown {
+  background: none;
+  border: none;
+}
+// TABLE LISTINGG STYLING
+.table_header_font {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.table_row_font {
+  font-family: Inter;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  background: #2d2d2e;
+}
+.table_rows {
+  width: 1513px;
+  height: 72px;
+}
+// PAGINATION STYLING
+.pagination-main {
+  margin-top: 65px;
+  padding: 0 45px 30px;
+  nav {
+    ul {
+      margin-bottom: 0;
+      --bs-pagination-border-radius: 0;
+      --bs-pagination-border-width: 0;
+      li {
+        margin: 0 5px;
+        a {
+          border-radius: 4px !important;
+          width: 32px;
+          height: 32px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 16px;
+          color: $neutral;
+          transition: all 0.5s ease;
+          cursor: pointer;
+          &:hover {
+            color: $neutral9;
+            background-color: $primary;
+          }
+        }
+      }
+    }
+  }
+}
+// PAGINATION STYLING
+
+// FORM FOOTER
+.form-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: $neutral9;
+  min-height: 75px;
+  align-items: center;
+  z-index: 2;
+  button {
+    margin-right: 15px;
+  }
+
+  .archive-btn {
+    margin-left: 4rem;
+  }
+}
+// FORM FOOTER
+
+.check-box input {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+}
+.check-box small {
+  vertical-align: text-bottom;
+  color: #2d2d2e;
+}
+.carbon-color {
+  color: #2d2d2e;
+}
+// CHECKBOX IN TENANT SINGLE
+.carbon-color {
+  color: #2d2d2e;
+}
+
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.gap-2 {
+  gap: 2px;
+}
+.mr-3 {
+  margin-right: 10px;
+}
+.table-listing-main {
+  &.long-table {
+    .table-responsive {
+      table {
+        thead {
+          tr {
+            th {
+              padding: 24px 0px 24px 16px;
+            }
+          }
+        }
+        tbody {
+          tr {
+            td {
+              padding: 30px 0px 30px 26px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.table-listing-main.long-table {
+  .table {
+    tr {
+      > td {
+        .dropdown-menu {
+          min-width: 7rem;
+        }
+      }
+    }
+  }
+}
+
+//last td in setting table apply padding-right
+.table-listing-main.long-table {
+  .table {
+    tr {
+      > td {
+        &:last-child {
+          padding-right: 40px;
+        }
+      }
+    }
+  }
+}

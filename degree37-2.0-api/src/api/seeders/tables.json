@@ -1,0 +1,355 @@
+[
+  { "user": "CreateUsersTable1693933776440" },
+  { "tenant": "CreateTenantsTable1693933776441" },
+  { "auth": "CreateAuthTable1693933776450" },
+  { "templates": "CreateTemplatesTable1693933875198" },
+  { "email_template": "CreateEmailTemplateTable1693933875199" },
+  { "donor": "CreateDonorTable1693933995215" },
+  { "menu_items": "CreateMenuItemsTable1693934006558" },
+  { "address_history": "CreateAddressHistoryTable1693934183960" },
+  { "address": "CreateAddressTable1693934185528" },
+  {
+    "tenant_configuration_detail": "CreateTenantConfigurationDetail1693934186299"
+  },
+  {
+    "tenant_configuration_detail_history": "CreateTenantConfigurationDetailHistory1693934187096"
+  },
+  { "applications": "CreateApplicationsTable1693934187862" },
+  { "modules": "CreateModulesTable1693934187863" },
+  { "permissions": "CreatePermissions1693934188703" },
+  { "procedure_types": "CreateProcedureTypes1693934189467" },
+  {
+    "procedure_types_history": "CreateProcedureTypesHistory693934190256"
+  },
+  { "products": "CreateProducts1693934191052" },
+  { "products_history": "CreateProductsHistory1693934191829" },
+  { "roles": "CreateRoles1693934194158" },
+  { "procedure": "CreateProcedure1693934197278" },
+  { "vehicle_type": "CreateVehicleType1693934198832" },
+  { "vehicle_type_history": "CreateVehicleTypeHistory1693934199679" },
+  { "organizational_levels": "CreateOrganizationalLevelsTable1693934200433" },
+  { "business_units": "CreateBusinessUnitsTable1693934200434" },
+  { "facility": "CreateFacility1693934200435" },
+  { "facility_history": "CreateFacilityHistory1693934201161" },
+  { "device_type": "CreateDeviceTypeTable1693934201993" },
+  { "device": "CreateDevice1693934201994" },
+  { "device_history": "CreateDeviceHistory1693934202786" },
+  {
+    "organizational_levels_history": "CreateOrganizationalLevelsHistory1693934203546"
+  },
+  { "tenant_role": "CreateTenantRole1693934204323" },
+  { "procedure_history": "CreateProcedureHistory1693934205075" },
+  { "roles_history": "CreateRolesHistory1693934205845" },
+  { "device_type_history": "CreateDeviceTypeHistory1693934206600" },
+  { "user_history": "CreateUserHistory1693934208092" },
+  {
+    "daily_goals_allocations": "CreateDailyGoalsAllocations1693934208884"
+  },
+  { "vehicle": "CreateVehicle1693934209645" },
+  { "vehicle_history": "CreateVehicleHistory1693934210415" },
+  { "vehicle_maintenance": "CreateVehicleMaintenance1693934212414" },
+  { "vehicle_share": "CreateVehicleShare1693934213294" },
+  { "monthly_goals": "CreateMonthlyGoals1693934214098" },
+  { "device_maintenance": "CreateDeviceMaintenance1693934215009" },
+  { "device_share": "CreateDeviceShare1693934215937" },
+  { "affiliation": "CreateAffiliation1693934216702" },
+  { "affiliation_history": "CreateAffiliationHistory1693934217459" },
+  { "monthly_goals_history": "CreateMonthlyGoalsHistory1693934218277" },
+  { "room_size": "CreateRoomSizeTable1693934219037" },
+  { "room_sizes_history": "CreateRoomSizesHistoryTable1693934219908" },
+  { "territory": "CreateTerritoryTable1693934220971" },
+  { "audit_fields": "CreateAuditFieldsTable1693934222224" },
+  { "ads": "CreateAdsTable1693934223875" },
+  { "ads_history": "CreateAdsHistoryTable1693934224750" },
+  { "contacts_roles_history": "CreateContactsRolesHistoryTable1693934225541" },
+  { "contacts_roles": "CreateContactsRolesTable1693934226312" },
+  { "industry_categories": "CreateIndustryCategoriesTable1693934227193" },
+  {
+    "industry_categories_history": "CreateIndustryCategoriesHistoryTable1693934228022"
+  },
+  {
+    "daily_goals_allocation_history": "CreateDailyGoalsAllocationHistoryTable1693934228806"
+  },
+  { "daily_goals_calenders": "CreateDailyGoalsCalendersTable1693934229590" },
+  { "territory_history": "CreateTerritoryHistoryTable1693934230366" },
+  { "banners": "CreateBannerTable1693934231118" },
+  { "banners_history": "CreateBannerHistoryTable1693934231916" },
+  { "booking_rules": "CreateBookingRulesTable1693934233452" },
+  { "operations_status": "CreateOperationsStatusTable1693934234990" },
+  { "team": "CreateTeamTable1693934235737" },
+  { "stages": "CreateStagesTable1693934236489" },
+  { "stages_history": "CreateStagesTable1693934236490" },
+  { "category": "CreateCategoryTable1693934237266" },
+  {
+    "staffing_classification": "CreateStaffingClassificationTable1693934238052"
+  },
+  {
+    "staffing_classification_history": "CreateStaffingClassificationHistoryTable1693934238815"
+  },
+  { "lock_dates": "CreateLockDateTable1693934239572" },
+  { "lock_dates_history": "CreateLockDateHistoryTable1693934240361" },
+  { "performance_rules": "CreatePerformanceRulesTable1693934241969" },
+  {
+    "performance_rules_history": "CreatePerformanceRulesHistoryTable1693934242844"
+  },
+  { "leaves": "CreateLeavesTable1693934244445" },
+  { "category_history": "CreateCategoryHistoryTable1693934245226" },
+  { "equipments": "CreateEquipmentEntityTable1693934245976" },
+  { "team_history": "CreateTeamHistoryTable1693934248357" },
+  { "sources": "CreateSourcesTable1693934249171" },
+  { "sources_history": "CreateSourcesHistoryTable1693934249935" },
+  {
+    "staffing_classification_setting": "CreateStaffingClassificationSettingTable1693934250704"
+  },
+  { "marketing_materials": "CreateMarketingMaterialsTable1693934251508" },
+  {
+    "marketing_materials_history": "CreateMarketingMaterialsHistoryTable1693934252276"
+  },
+  {
+    "operations_status_history": "CreateOperationsStatusHistoryTable1693934253035"
+  },
+  { "certification": "CreateCertificationTable1693934253797" },
+  { "certification_history": "CreateCertificationHistoryTable1693934254558" },
+  { "goal_variance": "CreateGoalVarianceTable1693934255332" },
+  { "goal_variance_history": "CreateGoalVarianceHistoryTable1693934256096" },
+  {
+    "staffing_classification_setting_history": "CreateStaffingClassificationSettingHistoryTable1693934256858"
+  },
+  { "close_dates": "CreateCloseDateTable1693934257629" },
+  { "close_dates_history": "CreateCloseDateHistoryTable1693934258419" },
+  { "equipments_history": "CreateEquipmentHistoryTable1693934259974" },
+  { "promotion_entity": "CreatePromotionEntityTable1693934260721" },
+  { "promotional_items": "CreatePromotionalItemsTable1693934260722" },
+  {
+    "promotional_items_history": "CreatePromotionalItemsHistoryTable1693934261499"
+  },
+  { "daily_capacity": "CreateDailyCapacityTable1693934263041" },
+  { "staff_setup_history": "CreateStaffSetupHistoryTable1693934263835" },
+  { "staff_setup": "CreateStaffSetupTable1693934264621" },
+  { "staff_config": "CreateStaffConfigTable1693934264622" },
+  { "staff_config_history": "CreateStaffConfigHistoryTable1693934265395" },
+  { "promotion_history": "CreatePromotionHistoryTable1693934268520" },
+  { "user_events": "CreateUserEvents1694022182028" },
+  { "tenant_history": "CreateTenantHistoryTable1694514626703" },
+  { "team_staff_history": "CreateTeamStaffHistoryTable1694524591813" },
+  { "staff": "CreateStaffTable1694524953673" },
+  { "business_units_history": "CreateBusinessUnitsHistoryTable1694530641287" },
+  { "daily_capacity_history": "CreateDailyCapacityHistoryTable1694534008881" },
+  {
+    "crm_non_collection_profiles": "CrmNonCollectionProfilesTable1694619128070"
+  },
+  {
+    "crm_non_collection_profiles_history": "CrmNonCollectionProfilesHistoryTable1694619149716"
+  },
+  { "leaves_history": "LeaveHistoryTable1694683458852" },
+  { "staff_leave": "CreateStaffLeave1694689802372" },
+  { "daily_hour": "CreateDailyHourTable1694689802376" },
+  { "daily_hour_history": "CreateDailyHourHistoryTable1694689802377" },
+  { "notes": "NotesTable1694697495689" },
+  { "notes_history": "NotesHistoryTable1694697495690" },
+  {
+    "banner_collection_operations": "CreateBannerCollectionOperationTable1694697835475"
+  },
+  {
+    "close_date_collection_operations": "CreateCloseDateCollectionOperationTable1694698329718"
+  },
+  { "accounts": "AccountsTable1694698361357" },
+  { "account_contacts": "AccountContactsTable1694698361358" },
+  { "account_filters": "AccountFiltersTable1694698748115" },
+  { "alias": "AliasTable1694698785306" },
+  { "approval": "Approval1694698833359" },
+  { "aprovals_history": "AprovalsHistoryTable1694698862434" },
+  { "crm_attachments": "CrmAttachmentsTable1694698901510" },
+  { "attachments_files": "AttachmentsFilesTable1694698901511" },
+  { "contacts": "ContactsTable1694698971033" },
+  { "contacts_history": "ContactsHistoryTable1694698989560" },
+  { "crm_attachments_history": "CrmAttachmentsHistoryTable1694699026567" },
+  { "crm_volunteer": "CrmVolunteerTable1694699153476" },
+  { "crm_volunteer_history": "CrmVolunteerHistoryTable1694699153477" },
+  { "locations": "LocationTable1694699279427" },
+  { "location_directions": "DirectionsTable1694699279428" },
+  { "prefixes": "PrefixesTable1694699546542" },
+  { "task": "TaskTable1694699546542" },
+  { "task_history": "TaskHistoryTable1694699546542" },
+  { "staff_certification": "StaffCertificationTable1694699673546" },
+  {
+    "staff_certification_history": "StaffCertificationHistoryTable1694699705096"
+  },
+  { "staff_leave_history": "StaffLeaveHistoryTable1694699768932" },
+  { "suffixes": "SuffixesTable1694699789471" },
+  { "tasks": "TasksTable1694700047786" },
+  { "tasks_history": "TasksHistoryTable1694700047787" },
+  { "crm_locations": "CrmLocations1694700047788" },
+  { "crm_locations_history": "CrmLocationsHistory1694700047788" },
+  { "donor_center_filter": "DonorCenterFilterTable1694700047790" },
+  { "crm_locations_specs": "CrmLocationsSpecsTable1694700047791" },
+  {
+    "crm_locations_specs_history": "CrmLocationsSpecsHistoryTable1694700047791"
+  },
+  {
+    "crm_locations_specs_options": "CrmLocationsSpecsOptionsTable1694700047793"
+  },
+  {
+    "crm_locations_specs_options_history": "CrmLocationsSpecsOptionsHistoryTable1694700047794"
+  },
+  {
+    "team_collection_operations": "TeamCollectionOperationsTable1694700351363"
+  },
+  { "tenant_applications": "CreateTenantApplicationTable1694700351364" },
+  {
+    "daily_capacity_collection_operations": "CreateDailyCapacityCollectionOperationTable1694700713816"
+  },
+  {
+    "daily_goals_collection_operations": "CreateDailyGoalsCollectionOperationTable1694704489722"
+  },
+  {
+    "daily_hour_collection_operations": "CreateDailyHourCollectionOperationTable1694705201417"
+  },
+  {
+    "equipments_collection_operations": "CreateEquipmentsCollectionOperationTable1694705597140"
+  },
+  {
+    "lock_date_collection_operations": "CreateLockDateCollectionOperationTable1694706024210"
+  },
+  {
+    "marketing_materials_collection_operations": "CreateMarketingMaterialsCollectionOperationTable1694706276548"
+  },
+  {
+    "monthly_goals_collection_operations": "CreateMonthlyGoalsCollectionOperationTable1694706497474"
+  },
+  {
+    "promotionalItem_collection_operations": "CreatePromotionalItemCollectionOperationTable1694706708318"
+  },
+  {
+    "promotionalItem_collection_operations_history": "CreatePromotionalItemCollectionOperationTable1694706708319"
+  },
+  { "booking_rules_add_field": "CreateBookingRulesAddFieldTable1694706708320" },
+  {
+    "procedure_types_products": "CreateProcedureTypesProducts1694706708321"
+  },
+  { "procedures_products": "CreateProceduresProducts1694706708322" },
+  {
+    "staff_collection_operations": "CreateStaffCollectionOperationTable1694706708323"
+  },
+  {
+    "promotions_collection_operations": "CreatePromotionsCollectionOperationTable1694706708324"
+  },
+  { "role_permission": "CreateRolePermissions1694706708325" },
+  { "team_staff": "CreateTeamStaffTable1694706708326" },
+  { "vehicle_certification": "CreateVehicleCertification1694706708327" },
+  { "accounts_history": "CreateAccountHistoryTable1694706708329" },
+  { "donors": "CreateDonorsTable1694706708330" },
+  { "donors_history": "CreateDonorsHistoryTable1694706708331" },
+  { "oc_drives": "OcDrivesTable1694706708332" },
+  { "oc_non_collection_events": "OcNonCollectionEventsTable1694706708333" },
+  { "oc_sessions": "OcSessionsTable1694706708334" },
+  { "drives": "CreateDriveTable1695305811857" },
+  { "drives_history": "CreateDriveHistorTable1695305811858" },
+  { "linked_drives": "CreateLinkedDrivesTable1695305811859" },
+  { "linked_drives_history": "CreateLinkedDrivesHistoryTable1695305811860" },
+  { "drives_zipcodes": "CreateDriveZipCodesTable1695305811861" },
+  { "drives_zipcodes_history": "CreateDriveZipCodesTable1695305811862" },
+  {
+    "drives_marketing_material_items": "CreateDriveMarketingMaterialItemsTable1695305811863"
+  },
+  {
+    "drives_marketing_material_items_history": "CreateDriveMarketingMaterialItemsHistoryTable1695305811864"
+  },
+  { "drive_equipments": "CreateDriveEquipmentsTable1695305811865" },
+  {
+    "drive_equipments_history": "CreateDriveEquipmentsHistoryTable1695305811866"
+  },
+  {
+    "drives_donor_comms_supp_accounts": "DrivesDonorCommunicationSupplementalAccounts1695305811867"
+  },
+  {
+    "drives_donor_comms_supp_accounts_history": "CreateDrivesDonorCommunicationSupplementalAccountsHistoryTable1695305811868"
+  },
+  { "drive_certifications": "DriveCertificationsTable1695305811869" },
+  {
+    "drive_certifications_history": "DriveCertificationsHistoryTable1695305811870"
+  },
+  {
+    "drives_promotional_items": "CreateDrivePromotionaltemsTable1695305811871"
+  },
+  {
+    "drives_promotional_items_history": "CreateDrivePromotionaltemsHistoryTable1695305811872"
+  },
+  { "drive_contacts": "CreateDriveContactsTable1695305811873" },
+  { "drive_contacts_history": "CreateDriveContactsHistoryTable1695305811874" },
+  { "shifts": "CreateShiftsTable1695305811875" },
+  { "shifts_history": "CreateShiftsHistoryTable1695305811876" },
+  { "shifts_vehicles": "CreateShiftsVehicleTable1695305811877" },
+  { "shifts_vehicles_history": "CreateShiftsVehicleTableHistory1695305811878" },
+  { "shifts_staff_setups": "CreateShiftsStaffSetupsTable1695305811879" },
+  {
+    "shifts_staff_setups_history": "CreateShiftsStaffSetupsHistoryTable1695305811880"
+  },
+  { "shifts_slots": "CreateShiftsSlotsTable1695305811881" },
+  { "shifts_slots_history": "CreateShiftsSlotsTableHistory1695305811882" },
+  { "shifts_projetions_staff": "CreateProjectionsStaffTable1695305811883" },
+  {
+    "shifts_projetions_staff_history": "CreateProjectionsStaffHistoryTable1695305811883"
+  },
+  { "shifts_devices": "CreateShiftsDevicesTable1695305811885" },
+  { "shifts_devices_history": "CreateShiftsDevicesHistoryTable1695305811886" },
+  { "staff_history": "CreateStaffHistoryTable1695405532784" },
+  { "staff_duplicates": "CreateStaffDuplicateTable1695459194542" },
+  { "account_preferences": "CreateAccountPreferenceTable1695476806496" },
+  {
+    "account_preferences_history": "CreateAccountPreferenceHistoryTable1695481011770"
+  },
+  { "account_affiliations": "CreateAccountAffiliationTable1695494830755" },
+  {
+    "account_affiliations_history": "CreateAccountAffiliationHistoryTable1695495649203"
+  },
+  {
+    "account_contacts_history": "CreateAccountsContactHistoryTable1695643562254"
+  },
+  { "qualifications": "CreateQualificationsTable1695716236769" },
+  { "staff_roles_mapping": "CreateStaffRolesMappingTable1695717665773" },
+  {
+    "staff_roles_mapping_history": "CreateStaffRolesMappingHistoryTable1695717699833"
+  },
+  {
+    "staff_donor_centers_mapping": "CreateStaffDonorCentersMappingTable1695717727514"
+  },
+  {
+    "staff_donor_centers_mapping_history": "CreateStaffDonorCentersMappingHistoryTable1695717865933"
+  },
+  { "duplicates": "CreateDuplicatesTable1695732885608" },
+  { "custom_fields": "CreateCustomFieldsTable1695815816580" },
+  { "custom_fields_history": "CreateCustomFieldsHistoryTable1695817069853" },
+  { "pick_lists": "CreatePicksListsTable1695817641239" },
+  { "pick_lists_history": "CreatePicksListsHistoryTable1695818245042" },
+  { "custom_fields_data": "CreateCustomFieldsDataTable1695818591278" },
+  {
+    "custom_fields_data_history": "CreateCustomFieldsDataHistoryTable1695895409785"
+  },
+  {
+    "daily_goals_calenders_history": "CreateDailyGoalsCalendersHistoryTable1695913221117"
+  },
+  { "duplicates_history": "CreateDuplicatesHistoryTable1696245309772" },
+  { "filter_criteria": "CreateFilterCriteria1696256011502" },
+  { "filter_saved": "CreateFilterSaved1696256011503" },
+  { "filter_saved_criteria": "CreateFilterSavedCriteria1696256011504" },
+  { "location_directions": "AlterTableLocationDirections1696431877765" },
+  { "location_directions_history": "AlterDirectionsHistoryTable1696507211915" },
+  { "account_filters": "RemoveAccountFiltersTable1696606949233" },
+  { "contact_preferences": "CreateContactPreferenceableTable1697013370295" },
+  {
+    "contact_preferences_history": "CreateContactPreferenceableHistoryTable1697013843279"
+  },
+  {
+    "user":"AlterUsersTable1694706708328"
+  },
+  {
+    "daily_goals_calenders":"AlterDailyGoalsCalendarAddIsLocked1695732885610"
+  },
+  {
+    "vehicle_type":"AlterAddcolumninVehicleType1696429961017"
+  },
+  {
+    "vehicle_type_history" :"AlterAddcolumninVehicleTypeHistory1696430186805"
+  }
+]

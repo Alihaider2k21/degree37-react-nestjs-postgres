@@ -1,0 +1,199 @@
+@import '../../../styles/Global/Variable.scss';
+
+.sidebarMain {
+  min-width: 17%;
+  box-shadow: -15px 4px 20px 0px $neutral;
+  z-index: 11;
+  height: 92vh;
+  position: sticky;
+  left: 0;
+  top: 0;
+
+  .sidebarTop {
+    height: 96.5%;
+
+    .sidebarHeader {
+      display: flex;
+      align-items: center;
+      height: 9%;
+      padding: 0 20px;
+      border-bottom: 1px solid $neutral4;
+
+      .icon {
+        margin-right: 15px;
+        cursor: pointer;
+      }
+
+      h3 {
+        font-size: 20px;
+        color: $neutral;
+        margin: 0;
+        font-weight: 700;
+      }
+    }
+
+    .sidebarBody {
+      height: 91%;
+      overflow-y: scroll;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+
+      ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        .menuItem {
+          a {
+            padding-left: 15px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid $neutral4;
+            font-size: 16px;
+            color: $secondary;
+            font-weight: 500;
+            background-color: $neutral9;
+            transition: none;
+            padding-right: 35px;
+
+            &:before {
+              // content: '-';
+              display: block;
+              margin-right: 10px;
+            }
+
+            &:hover {
+              background-color: $primary6;
+              font-weight: 700;
+            }
+            &.active {
+              background-color: $primary6;
+              font-weight: 700;
+            }
+          }
+        }
+
+        .active {
+          > a {
+            background-color: $primary6;
+            font-weight: 700;
+          }
+        }
+      }
+
+      .hasChildMain {
+        > a {
+          position: relative;
+
+          &:after {
+            content: '';
+            display: block;
+            background-image: url('../../../../public/images/chevron-bottom.svg');
+            height: 20px;
+            width: 20px;
+            position: absolute;
+            right: 20px;
+            object-fit: contain;
+          }
+        }
+
+        .hasChild {
+          transition: all 0.5s ease;
+          visibility: collapse;
+          opacity: 0;
+          height: 0;
+
+          &.open {
+            visibility: visible;
+            opacity: 1;
+            height: auto;
+          }
+
+          &.close {
+            display: block;
+          }
+
+          li {
+            a {
+              padding-left: 55px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .sidebarFooter {
+    height: 3.5%;
+    background-color: $primary;
+    display: flex;
+    align-items: center;
+
+    span {
+      color: $neutral9;
+      font-size: 12px;
+      padding: 0 20px;
+    }
+  }
+
+  &.closed {
+    min-width: 5%;
+
+    .sidebarBody {
+      ul {
+        .menuItem {
+          a {
+            padding-left: 20px;
+            padding-right: 0px;
+            padding-left: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+        }
+      }
+    }
+    .sidebarHeader {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .sidebarIcon {
+        margin: 0;
+      }
+    }
+  }
+}
+.activate {
+  background-color: $primary6 !important;
+  font-weight: 700 !important;
+}
+
+.active {
+  > a {
+    background-color: $primary6;
+    font-weight: 700;
+  }
+}
+
+.sidebarIconPadding {
+  padding: 10px 34px !important;
+}
+// .sidebarMain.closed {
+//   min-width: 5%;
+
+//   .sidebarBody ul .menuItem a {
+//     padding-left: 20px;
+//   }
+// }
+
+// @media only screen and (min-width: 1150px) {
+//   .sidebarMain.closed {
+//     .sidebarBody ul .menuItem a {
+//       padding-left: 20px;
+//     }
+//   }
+// }

@@ -1,0 +1,67 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.label:hover {
+  color: #000 !important;
+}
+.volunteer {
+  padding-bottom: 6rem;
+  .subHeading {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 1rem;
+  }
+
+  .form-field.checkbox {
+    width: 33%; /* Set the width to 33% */
+    display: inline-flex; /* Display inline */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 0; /* Remove default margin */
+    &:not(:last-child) {
+      margin-right: 20px; /* Add some spacing between checkboxes */
+    }
+    .form-check-input {
+      width: 22px;
+      height: 22px;
+    }
+    .form-check-label {
+      margin-left: 5px;
+    }
+    .error {
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+  :global {
+    .form-field.checkbox.cc label {
+      margin-left: 0px !important;
+    }
+  }
+}
+.accountViewMain {
+  // .heroIconImg {
+  // }
+}
+.imageMainContent {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 -5px 5px -5px #333;
+  background-color: white;
+}
+
+.drop > li > a:hover {
+  background-color: #1967d2 !important;
+  color: white !important;
+  // border: 1px solid #000 !important;
+}
+
+.duplicatePopup {
+  max-width: 450px !important;
+}

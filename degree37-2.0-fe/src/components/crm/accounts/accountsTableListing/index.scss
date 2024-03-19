@@ -1,0 +1,21 @@
+.account-list-header {
+  button::after {
+    display: none;
+  }
+  button {
+    min-height: unset;
+    height: unset !important;
+  }
+  ul {
+    width: 14rem;
+  }
+  .checkboxInput {
+    padding: 12px 16px 12px 16px;
+  }
+  li {
+    border: none !important;
+  }
+  li:hover {
+    background-color: rgb(104 174 255 / 20%);
+  }
+}

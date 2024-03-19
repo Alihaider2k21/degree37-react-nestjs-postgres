@@ -1,0 +1,37 @@
+.operationfilter {
+  width: 356px;
+  height: 56px;
+}
+
+.select {
+  padding-bottom: 0px !important;
+  padding-top: 10px !important;
+}
+
+.selecteditemcount {
+  height: 20px;
+  width: 20px;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: 48px;
+}
+
+.devicetypeinputfields {
+  padding: 16px 20px;
+  // color: #A3A3A3 !important;
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+}
+
+.selected {
+  font-weight: 400;
+  font-size: 16px;
+}

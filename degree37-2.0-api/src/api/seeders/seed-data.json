@@ -1,0 +1,1856 @@
+{
+  "applications": [
+    {
+      "name": "System Configuration",
+      "modules": [
+        {
+          "name": "Organizational Administration",
+          "code": "organizational_administration",
+          "child_modules": [
+            {
+              "name": "Hierarchy",
+              "code": "hierarchy",
+              "child_modules": [
+                {
+                  "name": "Organizational Levels",
+                  "code": "organizational_levels",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109010101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109010102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109010103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Business Units",
+                  "code": "business_units",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109010201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109010202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109010203"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Goals",
+              "code": "goals",
+              "child_modules": [
+                {
+                  "name": "Monthly Goals",
+                  "code": "monthly_goals",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109020101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109020102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109020103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Daily Goals Allocation",
+                  "code": "daily_goals_allocation",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109020201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109020202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109020204"
+                    },
+                    {
+                      "name": "Schedule Change",
+                      "code": "0109020203"
+                    }
+                  ]
+                },
+                {
+                  "name": "Daily Goals Calendar",
+                  "code": "daily_goals_calendar",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109020301"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109020302"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "03020303"
+                    }
+                  ]
+                },
+                {
+                  "name": "Performance Rules",
+                  "code": "performance_rules",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109020401"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109020402"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Products & Procedures",
+              "code": "products_procedures",
+              "child_modules": [
+                {
+                  "name": "Products",
+                  "code": "products",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109030101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109030102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109030103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Procedures",
+                  "code": "procedures",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109030201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109030202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109030203"
+                    }
+                  ]
+                },
+                {
+                  "name": "Procedure Types",
+                  "code": "procedure_types",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109030301"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109030302"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109030303"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Resources",
+              "code": "resources",
+              "child_modules": [
+                {
+                  "name": "Devices",
+                  "code": "devices",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109040101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109040102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109040103"
+                    },
+                    {
+                      "name": "Share Device",
+                      "code": "0109040104"
+                    },
+                    {
+                      "name": "Schedule Retirement",
+                      "code": "0109040105"
+                    },
+                    {
+                      "name": "Schedule Maintaince",
+                      "code": "0109040106"
+                    }
+                  ]
+                },
+                {
+                  "name": "Device Type",
+                  "code": "device_type",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109040201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109040202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109040203"
+                    }
+                  ]
+                },
+                {
+                  "name": "Vehicles",
+                  "code": "vehicles",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109040301"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109040302"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109040303"
+                    },
+                    {
+                      "name": "Share Vechicle",
+                      "code": "0109040304"
+                    },
+                    {
+                      "name": "Schedule Retirement",
+                      "code": "0109040305"
+                    },
+                    {
+                      "name": "Schedule Maintaince",
+                      "code": "0109040306"
+                    }
+                  ]
+                },
+                {
+                  "name": "Vehicle Type",
+                  "code": "vehicle_type",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109040401"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109040402"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109040403"
+                    }
+                  ]
+                },
+                {
+                  "name": "Facilities",
+                  "code": "facilities",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109040501"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109040502"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109040503"
+                    }
+                  ]
+                }
+              ],
+              "permissions": []
+            },
+            {
+              "name": "Content Management System",
+              "code": "content_management_system",
+              "child_modules": [
+                {
+                  "name": "Ads",
+                  "code": "ads",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109060101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109060102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109060103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Email Templates",
+                  "code": "email_templates",
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0109060201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0109060202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0109060203"
+                    }
+                  ]
+                }
+              ],
+              "permissions": []
+            },
+            {
+              "name": "Custom Fields",
+              "code": "custom_fields",
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "01090701"
+                },
+                {
+                  "name": "Write",
+                  "code": "01090702"
+                },
+                {
+                  "name": "Archive",
+                  "code": "01090703"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Geo Administration",
+          "code": "geo_administration",
+          "child_modules": [
+            {
+              "name": "Territory Management",
+              "code": "territory_management",
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "01100101"
+                },
+                {
+                  "name": "Write",
+                  "code": "01100102"
+                },
+                {
+                  "name": "Archive",
+                  "code": "01100103"
+                }
+              ]
+            }
+          ],
+          "permissions": []
+        },
+        {
+          "name": "Call Center Administration",
+          "code": "call_center_administration",
+          "child_modules": [
+            {
+              "name": "Call Outcomes",
+              "code": "call_outcomes",
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "01110101"
+                },
+                {
+                  "name": "Write",
+                  "code": "01110102"
+                },
+                {
+                  "name": "Archive",
+                  "code": "01110103"
+                }
+              ]
+            }
+          ],
+          "permissions": []
+        },
+        {
+          "name": "CRM Administration",
+          "code": "crm_administration",
+          "child_modules": [
+            {
+              "name": "ACCOUNTS",
+              "code": "crm_administration_accounts",
+              "child_modules": [
+                {
+                  "name": "Affiliation",
+                  "code": "crm_accounts_affiliation",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112010101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112010102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112010103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Sources",
+                  "code": "crm_accounts_sources",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112010201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112010202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112010203"
+                    }
+                  ]
+                },
+                {
+                  "name": "Stages",
+                  "code": "crm_accounts_stages",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112010301"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112010302"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112010303"
+                    }
+                  ]
+                },
+                {
+                  "name": "Industry Category",
+                  "code": "crm_accounts_industry-categories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112010401"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112010402"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112010403"
+                    }
+                  ]
+                },
+                {
+                  "name": "Industry Subcategory",
+                  "code": "crm_accounts_industry-subcategories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112010501"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112010502"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112010503"
+                    }
+                  ]
+                },
+                {
+                  "name": "Attachments Category",
+                  "code": "crm_accounts_attachments-categories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112010601"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112010602"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112010603"
+                    }
+                  ]
+                },
+                {
+                  "name": "Attachments Subcategory",
+                  "code": "crm_accounts_attachments-subcategories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112010701"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112010702"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112010703"
+                    }
+                  ]
+                },
+                {
+                  "name": "Notes Category",
+                  "code": "crm_accounts_notes-categories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112010801"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112010802"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112010803"
+                    }
+                  ]
+                },
+                {
+                  "name": "Notes Subcategory",
+                  "code": "crm_accounts_notes-subcategories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112010901"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112010902"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112010903"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "CONTACTS",
+              "code": "crm_administration_contacts",
+              "child_modules": [
+                {
+                  "name": "Roles",
+                  "code": "crm_contacts_roles",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112020101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112020102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112020103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Attachments Category",
+                  "code": "crm_contacts_attachments-categories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112020201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112020202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112020203"
+                    }
+                  ]
+                },
+                {
+                  "name": "Attachments Subcategory",
+                  "code": "crm_contacts_attachments-subcategories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112020301"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112020302"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112020303"
+                    }
+                  ]
+                },
+                {
+                  "name": "Notes Category",
+                  "code": "crm_contacts_notes-categories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112020401"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112020402"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112020403"
+                    }
+                  ]
+                },
+                {
+                  "name": "Notes Subcategory",
+                  "code": "crm_contacts_notes-subcategories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112020501"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112020502"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112020503"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "LOCATIONS",
+              "code": "crm_administration_locations",
+              "child_modules": [
+                {
+                  "name": "Room Sizes",
+                  "code": "crm_locations_roomSize",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112030101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112030102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112030103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Attachments Category",
+                  "code": "crm_locations_attachments-categories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112030201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112030202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112030203"
+                    }
+                  ]
+                },
+                {
+                  "name": "Attachments Subcategory",
+                  "code": "crm_locations_attachments-subcategories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112030301"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112030302"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112030303"
+                    }
+                  ]
+                },
+                {
+                  "name": "Notes Category",
+                  "code": "crm_locations_notes-categories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112030401"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112030402"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112030403"
+                    }
+                  ]
+                },
+                {
+                  "name": "Notes Subcategory",
+                  "code": "crm_locations_notes-subcategories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0112030501"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0112030502"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0112030503"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Operations Administration",
+          "code": "operations_administration",
+          "child_modules": [
+            {
+              "name": "Booking Drives",
+              "code": "BOOKING_DRIVES",
+              "child_modules": [
+                {
+                  "name": "Booking Rule",
+                  "code": "booking_rule",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113010101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113010102"
+                    }
+                  ]
+                },
+                {
+                  "name": "Daily Capacity",
+                  "code": "daily_capacity",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113010201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113010202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113010203"
+                    },
+                    {
+                      "name": "Schedule",
+                      "code": "0113010204"
+                    }
+                  ]
+                },
+                {
+                  "name": "Daily Hours",
+                  "code": "daily_hours",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113010301"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113010302"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113010303"
+                    },
+                    {
+                      "name": "Schedule",
+                      "code": "0113010304"
+                    }
+                  ]
+                },
+                {
+                  "name": "Operation Status",
+                  "code": "operation_status",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113010401"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113010402"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113010403"
+                    }
+                  ]
+                },
+                {
+                  "name": "Task Management",
+                  "code": "task_management",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113010501"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113010502"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113010503"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Calendar",
+              "code": "CALENDAR",
+              "child_modules": [
+                {
+                  "name": "Banner",
+                  "code": "calendar_banner",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113020101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113020102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113020103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Lock Dates",
+                  "code": "calendar_lock_dates",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113020201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113020202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113020203"
+                    }
+                  ]
+                },
+                {
+                  "name": "Close Dates",
+                  "code": "calendar_close_dates",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113020301"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113020302"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113020303"
+                    }
+                  ]
+                },
+                {
+                  "name": "Goal Variance",
+                  "code": "goal_variance",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113020401"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113020402"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Marketing equipments",
+              "code": "MARKETING_EQUIPMENTS",
+              "child_modules": [
+                {
+                  "name": "Promotions",
+                  "code": "marketing_equipments_promotions",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113030101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113030102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113030103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Promotional Items",
+                  "code": "marketing_equipments_promotional_items",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113030201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113030202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113030203"
+                    }
+                  ]
+                },
+                {
+                  "name": "Marketing Material",
+                  "code": "marketing_equipments_marketing_material",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113030301"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113030302"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113030303"
+                    }
+                  ]
+                },
+                {
+                  "name": "Approvals",
+                  "code": "marketing_equipments_approvals",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113030401"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113030402"
+                    }
+                  ]
+                },
+                {
+                  "name": "Equipments",
+                  "code": "marketing_equipments_equipments",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113030501"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113030502"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113030503"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Notes & Attachments",
+              "code": "NOTES_AND_ATTACHMENTS",
+              "child_modules": [
+                {
+                  "name": "Attachments Category",
+                  "code": "operation_administration_attachments-categories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113040101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113040102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113040103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Attachments Subcategory",
+                  "code": "operation_administration_attachments-subcategories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113040201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113040202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113040203"
+                    }
+                  ]
+                },
+                {
+                  "name": "Notes Category",
+                  "code": "operation_administration_notes-categories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113040301"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113040302"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113040303"
+                    }
+                  ]
+                },
+                {
+                  "name": "Notes Subcategory",
+                  "code": "operation_administration_notes-subcategories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113040401"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113040402"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113040403"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "name": "Non-Collection Events",
+              "code": "NON_COLLECTION_EVENTS",
+              "child_modules": [
+                {
+                  "name": "NCE Category",
+                  "code": "operation_administration_nce-categories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113050101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113050102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113050103"
+                    }
+                  ]
+                },
+                {
+                  "name": "NCE Subcategory",
+                  "code": "operation_administration_nce-subcategories",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0113050201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0113050202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0113050203"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Staffing Administration",
+          "code": "staffing_administration",
+          "child_modules": [
+            {
+              "name": "Staff Setups",
+              "code": "staff_administration_staff_setups",
+              "child_modules": [],
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "01140101"
+                },
+                {
+                  "name": "Write",
+                  "code": "01140102"
+                },
+                {
+                  "name": "Archive",
+                  "code": "01140103"
+                }
+              ]
+            },
+            {
+              "name": "Classifications",
+              "code": "CLASSIFICATIONS",
+              "child_modules": [
+                {
+                  "name": "Classifications",
+                  "code": "staff_administration_classification",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0114020101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0114020102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0114020103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Settings",
+                  "code": "staff_administration_settings",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0114020201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0114020202"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0114020203"
+                    }
+                  ]
+                }
+              ],
+              "permissions": []
+            },
+            {
+              "name": "Leave Types",
+              "code": "staff_administration_leave_types",
+              "child_modules": [],
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "01140301"
+                },
+                {
+                  "name": "Write",
+                  "code": "01140302"
+                },
+                {
+                  "name": "Archive",
+                  "code": "01140303"
+                }
+              ]
+            },
+            {
+              "name": "CERTIFICATIONS",
+              "code": "",
+              "child_modules": [
+                {
+                  "name": "Certifications",
+                  "code": "staff_administration_certification",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0114030101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0114030102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0114030103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Assigned Certifications",
+                  "code": "staff_administration_assigned_certifications",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0114030201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0114030202"
+                    }
+                  ]
+                }
+              ],
+              "permissions": []
+            },
+            {
+              "name": "TEAMS",
+              "code": "",
+              "child_modules": [
+                {
+                  "name": "Teams",
+                  "code": "staff_administration_teams",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0114040101"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0114040102"
+                    },
+                    {
+                      "name": "Archive",
+                      "code": "0114040103"
+                    }
+                  ]
+                },
+                {
+                  "name": "Assigned Members",
+                  "code": "staff_administration_assigned_members",
+                  "child_modules": [],
+                  "permissions": [
+                    {
+                      "name": "Read",
+                      "code": "0114040201"
+                    },
+                    {
+                      "name": "Write",
+                      "code": "0114040202"
+                    }
+                  ]
+                }
+              ],
+              "permissions": []
+            }
+          ]
+        },
+        {
+          "name": "Users Administration",
+          "code": "users_administration",
+          "child_modules": [
+            {
+              "name": "Users Roles",
+              "code": "users_roles",
+              "child_modules": [],
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "01150101"
+                },
+                {
+                  "name": "Write",
+                  "code": "01150102"
+                },
+                {
+                  "name": "Archive",
+                  "code": "01150103"
+                }
+              ]
+            },
+            {
+              "name": "Users",
+              "code": "users",
+              "child_modules": [],
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "01150201"
+                },
+                {
+                  "name": "Write",
+                  "code": "01150202"
+                },
+                {
+                  "name": "Archive",
+                  "code": "01150203"
+                }
+              ]
+            }
+          ],
+          "permissions": []
+        }
+      ]
+    },
+    {
+      "name": "CRM",
+      "modules": [
+        {
+          "name": "Accounts",
+          "code": "accounts",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "120101"
+            },
+            {
+              "name": "Write",
+              "code": "120102"
+            },
+            {
+              "name": "Schedule Drive",
+              "code": "120103"
+            },
+            {
+              "name": "Archive",
+              "code": "120104"
+            }
+          ]
+        },
+        {
+          "name": "Contacts",
+          "code": "contacts",
+          "child_modules": [
+            {
+              "name": "Volunteers",
+              "code": "volunteers",
+              "child_modules": [],
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "12020101"
+                },
+                {
+                  "name": "Write",
+                  "code": "12020102"
+                },
+                {
+                  "name": "Schedule Drive",
+                  "code": "12020103"
+                },
+                {
+                  "name": "Archive",
+                  "code": "12020104"
+                }
+              ]
+            },
+            {
+              "name": "Donor",
+              "code": "donor",
+              "child_modules": [],
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "12020201"
+                },
+                {
+                  "name": "Write",
+                  "code": "12020202"
+                },
+                {
+                  "name": "Send Email or SMS",
+                  "code": "12020203"
+                },
+                {
+                  "name": "Archive",
+                  "code": "12020204"
+                }
+              ]
+            },
+            {
+              "name": "Staff",
+              "code": "staff",
+              "child_modules": [],
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "12020301"
+                },
+                {
+                  "name": "Write",
+                  "code": "12020302"
+                },
+                {
+                  "name": "Send Email or SMS",
+                  "code": "12020303"
+                },
+                {
+                  "name": "Archive",
+                  "code": "12020304"
+                }
+              ]
+            }
+          ],
+          "permissions": []
+        },
+        {
+          "name": "Locations",
+          "code": "locations",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "120301"
+            },
+            {
+              "name": "Write",
+              "code": "120302"
+            },
+            {
+              "name": "Archive",
+              "code": "120303"
+            }
+          ]
+        },
+        {
+          "name": "Donor Centers",
+          "code": "donor_centers",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "120401"
+            },
+            {
+              "name": "Write",
+              "code": "120402"
+            },
+            {
+              "name": "Archive",
+              "code": "120403"
+            }
+          ]
+        },
+        {
+          "name": "Non-Collection Profiles",
+          "code": "non_collection_profiles",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "120501"
+            },
+            {
+              "name": "Write",
+              "code": "120502"
+            },
+            {
+              "name": "Archive",
+              "code": "120503"
+            }
+          ]
+        },
+        {
+          "name": "Dashboard",
+          "code": "crm_dashboard",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "120601"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Flow",
+      "modules": []
+    },
+    {
+      "name": "Call Center Manager",
+      "modules": []
+    },
+    {
+      "name": "Operations Center",
+      "modules": [
+        {
+          "name": "Operations",
+          "code": "operations_center_operations",
+          "child_modules": [
+            {
+              "name": "Drives",
+              "code": "operation_center_drives",
+              "child_modules": [],
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "13040101"
+                },
+                {
+                  "name": "Write",
+                  "code": "13040102"
+                },
+                {
+                  "name": "Archive",
+                  "code": "13040103"
+                },
+                {
+                  "name": "Staffing",
+                  "code": "13040104"
+                },
+                {
+                  "name": "Copy Drive",
+                  "code": "13040105"
+                },
+                {
+                  "name": "Link Drive",
+                  "code": "13040106"
+                }
+              ]
+            },
+            {
+              "name": "Sessions",
+              "code": "operation_center_sessions",
+              "child_modules": [],
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "13040201"
+                },
+                {
+                  "name": "Write",
+                  "code": "13040202"
+                },
+                {
+                  "name": "Archive",
+                  "code": "13040203"
+                },
+
+                {
+                  "name": "Staffing",
+                  "code": "13040204"
+                },
+                {
+                  "name": "Copy Sessions",
+                  "code": "13040205"
+                }
+              ]
+            },
+            {
+              "name": "Non-Collection Events",
+              "code": "operation_center_NCE",
+              "child_modules": [],
+              "permissions": [
+                {
+                  "name": "Read",
+                  "code": "13040301"
+                },
+                {
+                  "name": "Write",
+                  "code": "13040302"
+                },
+                {
+                  "name": "Archive",
+                  "code": "13040303"
+                },
+                {
+                  "name": "Staffing",
+                  "code": "13040304"
+                },
+                {
+                  "name": "Copy NCE",
+                  "code": "13040305"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Manage Favorites",
+          "code": "operation_center_favorite",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "130201"
+            },
+            {
+              "name": "Write",
+              "code": "130202"
+            },
+            {
+              "name": "Archive",
+              "code": "130203"
+            },
+            {
+              "name": "Duplicate",
+              "code": "130204"
+            },
+            {
+              "name": "Set as Default Favorite",
+              "code": "130205"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Staffing Management",
+      "modules": [
+        {
+          "name": "Staff List",
+          "code": "staff_list",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "060201"
+            },
+            {
+              "name": "Write",
+              "code": "060202"
+            },
+            {
+              "name": "Current Schedule",
+              "code": "060203"
+            },
+            {
+              "name": "Communicate",
+              "code": "060204"
+            },
+            {
+              "name": "Archive",
+              "code": "060205"
+            }
+          ]
+        },
+        {
+          "name": "Build Schedules",
+          "code": "build_schedules",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "060301"
+            },
+            {
+              "name": "Write",
+              "code": "060302"
+            },
+            {
+              "name": "Archive",
+              "code": "060303"
+            }
+          ]
+        },
+        {
+          "name": "Quick Change",
+          "code": "quick_change",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "060401"
+            },
+            {
+              "name": "Write",
+              "code": "060402"
+            },
+            {
+              "name": "Leave",
+              "code": "060403"
+            },
+            {
+              "name": "Reassign",
+              "code": "060404"
+            }
+          ]
+        },
+        {
+          "name": "View Schedule",
+          "code": "VIEW_SCHEDULE",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Staff Schedule",
+              "code": "060501"
+            },
+            {
+              "name": "Depart Schedule",
+              "code": "060502"
+            }
+          ]
+        },
+        {
+          "name": "Dashboard",
+          "code": "staffing_management_dashboard",
+          "child_modules": [],
+          "permissions": [
+            {
+              "name": "Read",
+              "code": "060101"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Reports",
+      "modules": []
+    },
+    {
+      "name": "Donor Portal",
+      "modules": []
+    },
+    {
+      "name": "Chairperson Portal",
+      "modules": []
+    }
+  ]
+}

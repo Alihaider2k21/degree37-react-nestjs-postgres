@@ -1,0 +1,238 @@
+@import './Global//Variable.scss';
+
+.loginModule {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  @media (max-width: 1199px) {
+    min-height: unset;
+  }
+
+  .loginRow {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+    min-height: inherit;
+    align-items: center;
+    @media (max-width: 1199px) {
+      flex-direction: column-reverse;
+      background-image: unset;
+    }
+  }
+  .leftMain {
+    .loginFormMain {
+      max-width: 400px;
+      padding: 0 5px;
+      margin: 0 auto;
+      .loginForm {
+        width: 100%;
+        display: flex;
+        flex-flow: wrap;
+        align-items: center;
+        justify-content: center;
+        & > * {
+          width: 100%;
+        }
+
+        & > div {
+          position: relative;
+        }
+
+        .logoTitle {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-flow: wrap;
+          margin-bottom: 65px;
+          .logo {
+            margin-bottom: 65px;
+          }
+          .title h2 {
+            font-size: 28px;
+            margin-bottom: 5px;
+            color: $primary;
+            font-weight: 600;
+          }
+
+          .title p {
+            font-size: 16px;
+            margin-bottom: 0;
+            color: #444444;
+          }
+        }
+        .formItem {
+          margin-bottom: 30px !important;
+          position: relative;
+          input {
+            width: 100%;
+          }
+          .passwordIcon {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: 25px;
+            color: $neutral;
+          }
+        }
+        .forgetPassword {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: right;
+          margin-bottom: 30px;
+        }
+        .submitBtn {
+          margin-bottom: 30px;
+          button {
+            width: 100%;
+          }
+        }
+        .signUp {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          p {
+            margin-bottom: 0;
+            color: #a3a3a3;
+            font-size: 18px;
+          }
+        }
+        @media (max-width: 767px) {
+          padding: 0 20px;
+        }
+      }
+    }
+    @media (max-width: 1199px) {
+      padding: 50px 0;
+    }
+  }
+  .rightMain {
+    background-image: url('../../public/images/login-bg.png');
+    background-size: cover;
+    background-position: center;
+    min-height: inherit;
+    .loginSliderMain {
+      padding: 30px 0;
+      max-width: 90%;
+      margin: 0 auto;
+      .loginSlider {
+        position: relative;
+        img {
+          margin: 0 auto;
+          height: 550px;
+          width: 650px;
+          object-fit: contain;
+          @media (max-width: 1400px) {
+            width: 100%;
+          }
+          @media (max-width: 1199px) {
+            width: 80%;
+          }
+        }
+        ul {
+          bottom: -40%;
+          li {
+            margin: 0 3px;
+            height: unset;
+            width: unset;
+            button {
+              height: 6px;
+              width: 6px;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              background-color: #c6c6c6;
+              border-radius: 50px;
+              transition: all 0.5s ease;
+              &:before {
+                display: none;
+              }
+            }
+          }
+          @media (max-width: 1400px) {
+            bottom: -65%;
+          }
+          @media (max-width: 1199px) {
+            bottom: -40%;
+          }
+          @media (max-width: 991px) {
+            bottom: -55%;
+          }
+          @media (max-width: 767px) {
+            display: none !important;
+          }
+        }
+        :global {
+          .slick-active button {
+            background-color: $neutral9;
+          }
+        }
+      }
+      @media (max-width: 1199px) {
+        padding: 50px 0;
+      }
+    }
+    .sliderText {
+      max-width: 429px;
+      margin: 0 auto;
+      text-align: center;
+      padding-bottom: 10%;
+      h3 {
+        color: $neutral9;
+        font-size: 28px;
+        margin-bottom: 5px;
+      }
+      p {
+        color: $neutral9;
+        font-size: 16px;
+      }
+      @media (max-width: 1199px) {
+        padding-bottom: 10%;
+      }
+    }
+    @media (max-width: 1199px) {
+      background-image: url('../../public/images/login-bg.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  .loadingOverlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  :global {
+    .spinner-border {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  .networkError {
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    z-index: 5;
+    text-align: center;
+    width: 400px;
+    padding: 30px;
+    background-color: $warning5;
+    color: $neutral9;
+    border-radius: 8px;
+    transform: translateY(-20%);
+  }
+  .spinner-border {
+    height: 100px;
+    width: 100px;
+  }
+}

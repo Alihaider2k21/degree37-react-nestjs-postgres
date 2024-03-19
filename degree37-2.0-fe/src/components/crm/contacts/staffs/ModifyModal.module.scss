@@ -1,0 +1,122 @@
+.tooltipBtn {
+  background: transparent;
+  padding: 0;
+}
+.tooltipTitle {
+  background-color: #72a3d0;
+  border-radius: 8px;
+  padding: 12px 15px;
+}
+.tooltipinner {
+  background-color: #2f4fff !important;
+  color: red !important;
+  // box-shadow: 0px 0px 4px black;
+  // opacity: 1 !important;
+}
+
+.topMargin {
+  margin-top: 7.4rem;
+  margin-bottom: 7.4rem;
+}
+
+.heading {
+  margin-bottom: 0px !important;
+  // padding: 30px;
+}
+
+.main {
+  width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 1px solid #d9d9d9;
+  padding: 30px;
+  display: flex;
+  // align-items: flex-start;
+  justify-content: space-between;
+  flex-flow: wrap;
+  margin-bottom: 20px;
+  align-items: center !important;
+}
+
+.headForm {
+  align-items: center !important;
+  padding-bottom: 9px !important;
+  .form-field {
+    margin-bottom: 0 !important;
+  }
+}
+
+.createsettingbtn {
+  font-size: 18px !important;
+  width: 306px;
+  height: 56px;
+  white-space: nowrap;
+}
+.createBtn {
+  font-family: Inter !important;
+  font-size: 16px !important;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 8px 29px !important;
+  background-color: #387de5;
+  border-radius: 6px !important;
+  line-height: 24px !important;
+  margin-right: 30px !important;
+  width: 109px;
+  height: 40px;
+}
+
+.createDisBtn {
+  pointer-events: none;
+  border-color: #f5f5f5 !important;
+  background-color: #f5f5f5 !important;
+  color: #a3a3a3;
+  border-radius: 6px;
+  font-family: Inter !important;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 8px 29px !important;
+  margin-right: 30px !important;
+  width: 109px;
+  height: 40px;
+}
+.cancelBtn {
+  color: #005375 !important;
+  border-radius: 4px !important;
+  padding: 3px !important;
+  font-size: 14px !important;
+  margin-right: 20px !important;
+}
+
+.cancelBtn:hover {
+  background-color: transparent !important;
+}
+
+.archiveBtn {
+  font-size: 14px !important;
+}
+
+.footerCancelBtn {
+  font-size: 14px !important;
+  color: #005375 !important;
+}
+.editSettings {
+  padding-left: 330px;
+  justify-content: space-between;
+}
+.editBtn {
+  padding: 0 3px;
+  gap: 3px;
+  width: 59px;
+}
+
+.modalMain {
+  // width: 847px !important;
+  max-height: 488px !important;
+}
+
+.formStyle {
+  padding: 0 !important;
+  border: none !important;
+}

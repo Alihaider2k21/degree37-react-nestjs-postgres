@@ -1,0 +1,126 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.permissionlist {
+  background-color: #eeeeee;
+  margin-right: 10px;
+  color: #296e8a;
+  padding-right: 0px !important;
+  font-size: 12px;
+  border-radius: 3px;
+  font-weight: 500;
+}
+
+.removeicon {
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.headercolor {
+  background-color: #cfd8e5 !important;
+}
+
+.flexwrap {
+  // flex-wrap: wrap;
+  padding: 10px 0px 10px 40px !important;
+}
+
+.formcontainer {
+  margin-top: 15vh;
+}
+
+.rows {
+  width: 100%;
+}
+
+.errorcolor {
+  color: red;
+}
+
+.bordercolor {
+  border-color: white !important;
+}
+
+.bordercolor:hover {
+  background-color: white !important;
+}
+
+.footertext {
+  position: absolute;
+  left: 285px;
+  cursor: pointer;
+}
+
+.footertext:hover {
+  color: #005375;
+}
+
+.formcontainer {
+  margin-top: 15vh;
+}
+
+.rows {
+  width: 100%;
+}
+
+.errorcolor {
+  color: red;
+}
+
+.bordercolor {
+  border-color: white !important;
+}
+
+.bordercolor:hover {
+  background-color: white !important;
+}
+
+.footertext {
+  position: absolute;
+  left: 375px;
+  cursor: pointer;
+}
+
+.footertext:hover {
+  color: #005375;
+}
+
+.filterbutton {
+  width: 180px !important;
+}
+
+.archiveoption {
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.my_div2 {
+  width: 100% !important;
+  // border: 10px solid red;
+  overflow-x: scroll;
+}
+
+@media only screen and (min-width: 1200px) {
+  .my_div {
+    // overflow: auto;
+    // scrollbar-width: none;
+    // -ms-overflow-style: none;
+    // padding: 0;
+    width: 100% !important;
+    // border: 10px solid #000;
+  }
+}
+
+.my_div {
+  // overflow: auto;
+  // scrollbar-width: none;
+  // -ms-overflow-style: none;
+  // padding: 0;
+  width: 1200px;
+  // max-width: 1155px;
+  // // margin: 0;
+  // border: 10px solid #000;
+}
+
+.my_div::-webkit-scrollbar {
+  display: none;
+}

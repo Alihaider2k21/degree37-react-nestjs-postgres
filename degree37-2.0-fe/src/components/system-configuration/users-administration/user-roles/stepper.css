@@ -1,0 +1,93 @@
+/* Stepper line styles */
+.stepper-line {
+  position: absolute;
+  width: 2px;
+  left: 5px;
+  background-color: #ccc;
+}
+
+/* Stepper line styles */
+.stepper-line-inner {
+  position: absolute;
+  width: 2px;
+  left: 5px;
+  top: 15px;
+  background-color: #ccc;
+}
+
+.stepper-indicator {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 10px;
+  background-color: #fff;
+  border: 2px solid #ccc;
+  border-radius: 50%;
+}
+
+/* Add specific styles for each level */
+.level-1 .stepper-indicator {
+  background-color: #377de5; /* Adjust color as needed */
+  border-color: #377de5;
+}
+
+.level-2 .stepper-indicator {
+  background-color: #377de5; /* Adjust color as needed */
+  border-color: #377de5;
+}
+
+.level-3 .stepper-indicator {
+  background-color: #72a3d0; /* Adjust color as needed */
+  border-color: #72a3d0;
+}
+
+.level-4 .stepper-indicator {
+  background-color: #f7f7f7; /* Adjust color as needed */
+  border-color: #ced8e5;
+}
+
+/* Add more levels as needed */
+
+/* Apply styles to the stepper line and indicators */
+/* For the given HTML structure, you can add the classes like this */
+/* Make sure to adjust classes according to your actual HTML structure */
+.level-1 .stepper-line {
+  height: 110%;
+}
+
+.level-1 .stepper-line-first {
+  position: absolute;
+  width: 2px;
+  left: 5px;
+  background-color: #ccc;
+  top: 10px;
+  height: 100%;
+}
+.level-1 .stepper-line-last {
+  position: absolute;
+  width: 2px;
+  left: 5px;
+  background-color: #ccc;
+  bottom: 10px;
+  height: 100%;
+}
+
+.level-2 .stepper-line-inner {
+  height: 2px;
+  width: 50px;
+}
+
+.level-3 .stepper-line-inner {
+  height: 2px;
+  width: 89px;
+  left: -41px;
+}
+
+.level-4 .stepper-line-inner {
+  height: 2px;
+  width: 138px;
+  left: -89px;
+}
+/* .form-check.form-switch.position-relative {
+  width: 100%;
+} */

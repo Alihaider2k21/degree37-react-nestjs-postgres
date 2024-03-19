@@ -1,0 +1,121 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.formcontainer {
+  margin-top: 12vh;
+  margin-bottom: 30vh;
+}
+
+.heading {
+  margin-bottom: 24px !important;
+  margin-top: -7px !important;
+}
+.dropdownWidthMenu {
+  width: 255px !important;
+}
+
+.footerNonCollection {
+  margin-top: 0px !important;
+  button {
+    padding: 12px 23px !important;
+  }
+}
+.plusNon {
+  padding: 0px !important;
+  margin-left: 18px !important;
+  margin-bottom: 22.15px !important;
+}
+.cancelbutton {
+  font-size: 14px;
+  margin-right: 20px;
+  color: #005375 !important;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.cancelbutton:hover {
+  color: #387de5 !important;
+}
+
+.footercancelbtn {
+  font-size: 15px !important;
+  margin-right: 0px !important;
+  padding-right: 20px !important;
+}
+
+.datepicker {
+  padding: 15px 33px 15px 20px !important;
+}
+
+.saveandclose {
+  padding: 12px 23px !important;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #387de5;
+  color: #387de5 !important;
+  margin-right: 20px !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.saveandclose:hover {
+  background-color: #edf4ff !important;
+}
+
+.labelTimer {
+  top: 25%;
+  font-size: 12px;
+  color: rgb(85, 85, 85);
+}
+
+.labelTop {
+  height: 36px;
+  width: 36px;
+  margin-bottom: 20px !important;
+  color: #fff;
+  font-size: 16px;
+}
+.addShift {
+  min-height: 40px !important;
+  padding: 8px 23px !important;
+}
+
+.dropdownWidthMenu {
+  width: 255px !important;
+}
+.pageCardactive {
+  height: 32px;
+  min-width: 32px;
+  padding: 2px;
+  border-radius: 4px;
+  border: none;
+  margin: 0 6px;
+  color: $neutral9;
+  background: $primary;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pageCard {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  padding: 0.3rem 0.7rem;
+  color: $neutral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  > svg {
+    color: #387de5;
+  }
+  &:disabled {
+    > svg {
+      color: lightgray;
+    }
+    cursor: not-allowed;
+  }
+}

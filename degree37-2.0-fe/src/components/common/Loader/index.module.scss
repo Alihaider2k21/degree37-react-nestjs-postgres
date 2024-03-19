@@ -1,0 +1,31 @@
+@import '../../../styles/Global/Variable.scss';
+
+.contentLoader {
+  //min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: transparent !important;
+  .textFadeInOut {
+    color: rgb(100, 100, 245);
+    margin-top: 10px;
+    padding-top: 10px;
+    animation: fade-in-out 2s ease-in-out infinite;
+    font-size: xx-large;
+  }
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

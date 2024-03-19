@@ -1,0 +1,22 @@
+@import '../../../../../../styles/Global/Variable.scss';
+
+.select {
+  padding-bottom: 0px !important;
+  padding-top: 10px !important;
+  option: {
+    background-color: white;
+  }
+}
+.archived {
+  position: absolute;
+  right: 72%;
+  color: red;
+  cursor: pointer;
+  &:hover {
+    color: $primary;
+  }
+}
+.error {
+  font-size: 13px;
+  color: $warning5;
+}

@@ -1,0 +1,149 @@
+@import '../../../../../../styles/Global/Variable.scss';
+
+.toggle-button {
+  display: inline-block;
+}
+
+.toggle-input {
+  display: none;
+}
+
+.toggle-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.toggle-text {
+  color: black;
+  margin-right: 5px; /* Adjust the margin as needed */
+  font-size: 14px; /* Adjust the font size as needed */
+}
+
+.toggle-slider {
+  width: 40px; /* Adjust the width as needed */
+  height: 20px; /* Adjust the height as needed */
+  background-color: #fafafa; /* Adjust the background color as needed */
+  border-radius: 10px; /* Adjust the border radius as needed */
+  position: relative;
+  border: 1px solid grey;
+  transition: background-color 0.3s ease;
+}
+
+.toggle-slider:before {
+  content: '';
+  width: 14px;
+  height: 14px;
+  background-color: #007bff; /* Adjust the handle color as needed */
+  border-radius: 50%;
+  position: absolute;
+  top: 2.5px;
+  left: 2px;
+  transition: transform 0.3s ease;
+}
+.toggle-input:checked + .toggle-label .toggle-slider {
+  background-color: #007bff; /* Adjust the active background color as needed */
+  border: none;
+}
+
+.toggle-input:checked + .toggle-label .toggle-slider:before {
+  transform: translateX(20px); /* Adjust the handle position as needed */
+  background-color: white;
+}
+
+.form-floating label {
+  color: #a5a9ac; /* Set initial label color to muted */
+  font-size: medium;
+}
+
+.form-floating:hover input {
+  border-radius: 6px;
+  border: 1px solid #007bff; /* Change border color on hover to blue */
+}
+.form-floating:hover select {
+  border-radius: 6px;
+  border: 1px solid #007bff; /* Change border color on hover to blue */
+}
+
+.form-floating:hover input + label {
+  color: black; /* Set label color to black on hover */
+}
+
+.form-floating > .form-select {
+  padding-top: 0.4rem !important;
+  color: #a5a9ac;
+}
+.form-floating:hover > .form-select {
+  color: black;
+}
+.form-floating:hover select {
+  // background-image: url("./select-icon.svg"); /* Set a background image */
+}
+
+.input-container {
+  position: relative;
+  display: inline-block;
+}
+
+.input-container input {
+  padding-right: 30px; /* Add space for the SVG icon */
+}
+
+.input-container svg {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+}
+.full-width {
+  width: 100%;
+}
+
+.formcontainer {
+  margin-top: 15vh;
+}
+
+.error {
+  color: red;
+}
+
+.cancelbutton {
+  font-size: 14px;
+  margin-right: 20px;
+  color: #005375;
+  line-height: 24px;
+  cursor: pointer;
+}
+.cancelbutton:hover {
+  color: #387de5;
+}
+.saveclose {
+  padding: 12px 23px;
+}
+.saveandclose {
+  padding: 12px 23px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #387de5;
+  color: #387de5;
+  margin-right: 20px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
+}
+.savechange {
+  background-color: #387de5;
+  color: white;
+  margin-right: 30px !important;
+}
+.saveandclose:hover {
+  cursor: pointer;
+}
+.createbtn {
+  margin-right: 30px !important;
+}
+.editsize {
+  font-size: 20px;
+}

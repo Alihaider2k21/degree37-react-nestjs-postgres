@@ -1,0 +1,74 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.aboutAccountMain {
+  .custom-datepicker {
+    border-radius: 8px;
+    border: 1px solid #e4e4e4;
+    padding: 16px 20px;
+  }
+  thead {
+    height: 70px;
+  }
+  .tableHead {
+    border-left: unset !important;
+    border-right: unset !important;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .tableTD {
+    border-left: unset !important;
+    border-right: unset !important;
+  }
+  .linkText {
+    color: #005375 !important;
+  }
+  .search {
+    display: flex;
+    align-items: center;
+    .formItem {
+      // margin-right: 20px;
+      position: relative;
+      input[type='text'] {
+        border: 1px solid $neutral6;
+        border-radius: 8px;
+        min-height: 56px;
+        padding: 10px 20px 10px 56px;
+        transition: all 0.5s ease;
+        background-image: url(../../../../../public/images/Search.png);
+        background-size: auto;
+        background-repeat: no-repeat;
+        background-position: 8% 50%;
+        width: 326px;
+        font-size: 16px;
+      }
+
+      input[type='text']:hover {
+        border-color: $primary;
+      }
+
+      input[type='text']:focus {
+        background-color: unset;
+        outline: none;
+        box-shadow: unset;
+        border-color: $primary;
+      }
+
+      input[type='text']:focus::placeholder {
+        color: $neutral10 !important;
+      }
+
+      input[type='text']:hover::placeholder {
+        color: $neutral;
+      }
+
+      input[type='text']::placeholder {
+        color: $neutral10;
+      }
+    }
+  }
+  .externalLink {
+    > a {
+      color: #005375;
+    }
+  }
+}

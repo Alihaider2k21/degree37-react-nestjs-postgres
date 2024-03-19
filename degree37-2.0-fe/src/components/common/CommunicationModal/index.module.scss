@@ -1,0 +1,48 @@
+@import '../../../styles//Global//Variable.scss';
+
+.CreateMessageModal {
+  .MessageModalInner {
+    max-width: 1020px;
+    padding: 30px;
+    .MessageModalContent {
+      text-align: left;
+      :global {
+        form {
+          .formGroup {
+            padding: 0;
+            margin: 0;
+            border-radius: unset;
+            background-color: unset;
+            border: none;
+            width: unset;
+            justify-content: left;
+            .form-field {
+              width: 33.33%;
+              margin-right: 20px;
+              .radio-label {
+                margin-right: 30px;
+              }
+            }
+            .textarea {
+              margin-right: 0;
+              .length {
+                margin-top: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: right;
+                font-size: 16px;
+                color: $neutral10;
+              }
+            }
+          }
+          .buttons {
+            justify-content: right;
+            .btn {
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,510 @@
+@import '../../../../../styles/Global/Variable.scss';
+
+.label:hover {
+  color: #000 !important;
+}
+
+.account {
+  .subHeading {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 1rem;
+  }
+
+  .form-field.checkbox {
+    width: 33%;
+    /* Set the width to 33% */
+    display: inline-flex;
+    /* Display inline */
+    align-items: center;
+    /* Align items vertically */
+    margin-bottom: 0;
+
+    /* Remove default margin */
+    &:not(:last-child) {
+      margin-right: 20px;
+      /* Add some spacing between checkboxes */
+    }
+
+    .form-check-input {
+      width: 22px;
+      height: 22px;
+    }
+
+    .form-check-label {
+      margin-left: 5px;
+    }
+
+    .error {
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+
+  :global {
+    .form-field.checkbox.cc label {
+      margin-left: 0px !important;
+    }
+  }
+}
+
+.imageMainContent {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 -5px 5px -5px #333;
+  background-color: white;
+}
+
+.drop > li > a:hover {
+  background-color: #1967d2 !important;
+  color: white !important;
+  // border: 1px solid #000 !important;
+}
+
+.radioBtnGap {
+  width: auto;
+
+  > div {
+    width: 39.8% !important;
+  }
+}
+
+.formCheckBoxes {
+  width: 100% !important;
+  text-wrap: nowrap !important;
+}
+
+.btnAddContact {
+  display: inline-flex;
+  height: 40px;
+  padding: 12px 23px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background-color: #387de5;
+  margin-bottom: 0px;
+  color: white !important;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #72a3d0;
+  }
+}
+
+.tableAccount {
+  thead {
+    tr {
+      th {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  border: 1px solid #d9d9d9;
+}
+
+.modalTableAccount {
+  thead {
+    background-color: #cfd8e5 !important;
+
+    tr {
+      background-color: #cfd8e5 !important;
+
+      th:nth-child(1) {
+        text-align: center !important;
+      }
+
+      th {
+        background-color: #cfd8e5 !important;
+        font-size: 16px;
+        font-weight: 500;
+        vertical-align: middle;
+        height: 50px !important;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td:nth-child(1) {
+        text-align: center !important;
+      }
+
+      td {
+        vertical-align: middle;
+        font-size: 14px;
+        font-weight: 400;
+
+        input[type='checkbox'] {
+          padding: 8px !important;
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+
+  border: 1px solid #d9d9d9;
+}
+
+.btncancel {
+  font-size: 14px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  color: #005375;
+
+  &:hover {
+    color: #387de5;
+    cursor: pointer;
+  }
+}
+
+.shift-count {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.labelselected {
+  top: 0.8rem;
+}
+
+.tooltipTime {
+  font-size: 12px;
+}
+
+.badge {
+  border-color: #d9d9d9;
+  background-color: #eeeeee !important;
+  color: #005375;
+  font-weight: normal;
+}
+
+.error {
+  font-size: 13px;
+  color: #ff1e1e !important;
+}
+
+.pageCardactive {
+  height: 32px;
+  min-width: 32px;
+  padding: 2px;
+  border-radius: 4px;
+  border: none;
+  margin: 0 6px;
+  color: $neutral9;
+  background: $primary;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageCard {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  padding: 0.3rem 0.7rem;
+  color: $neutral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > svg {
+    color: #387de5;
+  }
+
+  &:disabled {
+    > svg {
+      color: lightgray;
+    }
+
+    cursor: not-allowed;
+  }
+}
+
+.barIcon {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #1384b2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Shadows/Small */
+  box-shadow: 0px 8px 15px 0px rgba(5, 16, 55, 0.08);
+}
+
+.barHeading {
+  color: #2d2d2e;
+  /* Heading/H6 */
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-left: 15px;
+}
+
+.barText {
+  color: #555;
+  /* Field Text/1 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-left: 15px;
+}
+
+.filterInner {
+  min-height: 85px;
+  padding: 0px 30px;
+  background-color: #ffffff;
+  display: grid;
+  align-items: center;
+}
+
+.mainBar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggleText {
+  color: #212121;
+
+  /* Field Text/1 */
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 10px;
+}
+
+// add slot
+
+.description {
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: #2d2d2e;
+}
+
+.daysList {
+  display: flex;
+}
+
+.days {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  border-radius: 4px;
+  // background: #387DE5;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.daysText {
+  // color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.normal {
+  background-color: #edf4ff;
+}
+
+.clicked {
+  background-color: #387de5;
+}
+
+.textColorWhite {
+  color: #fff;
+}
+
+.textColorBlack {
+  color: #000;
+}
+
+.formContainer {
+  margin-top: 30px;
+}
+
+.selectMarginShift {
+  margin-bottom: 20px;
+  width: 325px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.selectMarginRender {
+  width: 318px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.fieldList {
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dayField {
+  margin-bottom: 20px;
+  // margin-right: 20px;
+}
+
+.cancelShiftBtn {
+  display: flex;
+  width: 132px;
+  height: 56px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  border: 1px solid #387de5;
+  color: #387de5;
+  text-align: center;
+  /* Button & Links/Large */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.saveShiftBtn {
+  display: flex;
+  width: 132px;
+  height: 56px;
+  padding: 16px 32px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #387de5;
+  color: #fff;
+  text-align: center;
+  /* Button & Links/Large */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.shiftBtns {
+  display: flex;
+  justify-content: end;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 1s ease 0s;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+
+    .popupInner {
+      bottom: 0;
+    }
+  }
+
+  .popupInner {
+    bottom: 100%;
+    position: relative;
+    transition: all 1s ease;
+    max-width: 792px;
+    // height: 670px;
+    width: 100%;
+    background-color: $neutral9;
+    border-radius: 10px;
+    display: inline-flex;
+    padding: 30px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+
+    .content {
+      width: 100%;
+
+      h3 {
+        font-size: 32px;
+        font-weight: 500;
+        margin-bottom: 10px;
+        color: $neutral;
+      }
+
+      p {
+        font-size: 16px;
+        color: $neutral10;
+        margin-bottom: 0;
+      }
+
+      .buttons {
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+
+        // button {
+        //     min-width: 132px;
+        // }
+      }
+    }
+  }
+}

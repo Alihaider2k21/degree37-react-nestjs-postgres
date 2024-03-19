@@ -1,0 +1,104 @@
+@import '../../../../../styles//Global//Variable.scss';
+
+.donors_centersFilters {
+  .outlineBtn {
+    color: #387de5 !important;
+    background-color: white !important;
+    border-color: #387de5 !important;
+  }
+  .nameInputField {
+    height: 56px;
+    border: 1px solid #e4e4e4;
+    outline: none !important;
+  }
+  .outlineBtn:hover {
+    background-color: rgba(104, 174, 255, 0.2) !important;
+  }
+  .react-select__menu-list {
+    max-height: 250px !important;
+    overflow-y: auto;
+  }
+  .more-options {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    color: #005375 !important;
+  }
+  .selectFilters {
+    background-color: white;
+    padding: 20px;
+    width: 100%;
+    // margin: unset;
+    border-top: 1px solid #dadada;
+  }
+}
+
+.label:hover {
+  color: #000 !important;
+}
+.donors_centers {
+  .subHeading {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 1rem;
+  }
+
+  .form-field.checkbox {
+    width: 33%; /* Set the width to 33% */
+    display: inline-flex; /* Display inline */
+    align-items: center; /* Align items vertically */
+    margin-bottom: 0; /* Remove default margin */
+    &:not(:last-child) {
+      margin-right: 20px; /* Add some spacing between checkboxes */
+    }
+    .form-check-input {
+      width: 22px;
+      height: 22px;
+    }
+    .form-check-label {
+      margin-left: 5px;
+    }
+    .error {
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+  :global {
+    .form-field.checkbox.cc label {
+      margin-left: 0px !important;
+    }
+  }
+}
+
+.drop > li > a:hover {
+  background-color: #1967d2 !important;
+  color: white !important;
+}
+.clearAllFiltersTxt {
+  font-size: 14px;
+  font-weight: 400;
+  color: #005375;
+  cursor: pointer;
+}
+.appliedFilterContainer {
+  border-radius: 4px;
+  background: #eee;
+  padding: 5px 8px;
+}
+.appliedFilterSpan {
+  color: #005375;
+  font-size: 12px;
+  font-weight: 400;
+}
+.clearFilterBtn {
+  font-size: 18px;
+  font-weight: 400;
+  color: #a3a3a3;
+  cursor: pointer;
+}

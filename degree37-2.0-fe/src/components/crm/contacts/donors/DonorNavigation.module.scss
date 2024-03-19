@@ -1,0 +1,26 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.memberIcon {
+  background-color: $secondary2;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.memberName,
+.memberRole {
+  font-weight: 500;
+  color: $neutral;
+  margin-bottom: 0;
+}
+
+.memberName {
+  font-size: 24px;
+}
+
+.memberRole {
+  color: $tertiary;
+  font-size: 20px;
+}

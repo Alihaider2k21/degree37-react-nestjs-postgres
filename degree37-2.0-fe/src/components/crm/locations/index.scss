@@ -1,0 +1,130 @@
+@import '../../../styles/Global/Variable.scss';
+
+.test {
+  max-width: 100% !important;
+}
+.top_tab_qualification {
+  background-color: white;
+  display: flex;
+  align-items: end;
+  height: 62px;
+  padding-left: 30px;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  p {
+    padding: 11px 19px;
+    cursor: pointer;
+    color: #005375;
+  }
+  .active {
+    background: #387de5;
+    color: white;
+  }
+}
+.qualification_heading {
+  display: flex;
+  height: 50px;
+  padding: 0px 0px 0px 30px;
+  // border: 1px solid #000;
+  align-items: center;
+  background-color: white;
+  border-top: 1px solid #d9d9d9;
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+  .left-side-head {
+    justify-content: start !important;
+  }
+  p {
+    flex: 1;
+    margin-bottom: 0px;
+
+    // border: 1px solid #000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.last_element {
+  border-radius: 0 0 10px 10px;
+}
+.qualification_bottom {
+  border: 1px solid #d9d9d9;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  // padding-right: 30px;
+  min-height: 50px;
+  overflow: hidden;
+
+  .left-side-color {
+    background-color: #f7f7f7;
+    padding-left: 30px;
+    padding-right: 20px;
+    justify-content: start !important;
+  }
+
+  p {
+    flex: 1;
+    min-height: 50px;
+    margin-bottom: 0px;
+    // border: 1px solid #000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.edit_location {
+  color: #387de5 !important;
+  font-size: 14px !important;
+}
+
+.customPadding {
+  .field {
+    span {
+      div {
+        span:nth-child(2) {
+          z-index: 10 !important;
+        }
+      }
+    }
+    textarea {
+      padding-right: 18px !important;
+    }
+  }
+}
+
+.create_locations_insite_stair,
+.create_locations_outsite_stair {
+  > div {
+    span {
+      > div {
+        span:nth-child(2) {
+          z-index: 11 !important;
+        }
+      }
+    }
+  }
+}
+
+.saveandclose {
+  padding: 12px 23px !important;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #387de5;
+  color: #387de5 !important;
+  margin-right: 20px !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.saveandclose:hover {
+  background-color: #edf4ff !important;
+}

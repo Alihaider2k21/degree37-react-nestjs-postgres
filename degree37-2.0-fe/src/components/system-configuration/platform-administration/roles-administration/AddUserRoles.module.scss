@@ -1,0 +1,161 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.addUserRoles {
+  .permissions {
+    .group {
+      padding-left: 20px;
+      border-left: 1px solid #ced8e5;
+
+      > :global(.form-field) {
+        margin-bottom: 30px;
+        position: relative;
+
+        &:before {
+          content: '';
+          display: block;
+          height: 15px;
+          width: 15px;
+          background-color: $primary;
+          position: absolute;
+          left: -28px;
+          border-radius: 30px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      :global(.toggle-text) {
+        font-size: 20px !important;
+        font-weight: 500;
+      }
+
+      .innerChild {
+        opacity: 0;
+        height: 0;
+        transition:
+          opacity 0.5s,
+          height 0.5s;
+
+        &.show {
+          opacity: 1;
+          height: auto;
+        }
+
+        &.hide {
+          opacity: 0;
+          height: 0;
+        }
+
+        > :global(.form-field) {
+          margin-bottom: 30px;
+        }
+
+        .group {
+          margin-bottom: 30px;
+          border: none;
+          padding-left: 30px;
+
+          > :global(.form-field) {
+            &:after {
+              content: '';
+              display: block;
+              width: 30px;
+              height: 2px;
+              background-color: #ced8e5;
+              position: absolute;
+              left: -50px;
+            }
+
+            &:before {
+              z-index: 1;
+              height: 12px;
+              width: 12px;
+            }
+          }
+
+          .innerChild {
+            .group {
+              > :global(.form-field) {
+                &:after {
+                  width: 55px;
+                  left: -80px;
+                }
+              }
+            }
+
+            .innerChild {
+              .group {
+                > :global(.form-field) {
+                  &:after {
+                    content: '';
+                    width: 90px;
+                    left: -110px;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .withCheckbox {
+          display: flex;
+
+          :global(.form-field) {
+            margin-bottom: 0;
+            width: 45%;
+          }
+
+          .checkBoxRow {
+            display: flex;
+
+            :global(.form-field) {
+              margin-right: 20px;
+
+              label {
+                margin-left: 5px;
+              }
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  textarea {
+    border: 1px solid $neutral6;
+    border-radius: 8px;
+    min-height: 160px;
+    padding: 10px 20px;
+    transition: all 0.5s ease;
+    font-size: 16px;
+    resize: none;
+
+    &:hover {
+      border-color: $primary;
+
+      &::placeholder {
+        font-size: 16px;
+        color: $neutral;
+      }
+    }
+
+    &:focus {
+      background-color: unset;
+      outline: none;
+      box-shadow: unset;
+      border-color: $primary;
+    }
+
+    &::placeholder {
+      font-size: 16px;
+      color: $neutral10;
+      transition: all 0.5s ease;
+    }
+  }
+}

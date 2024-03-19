@@ -1,0 +1,38 @@
+.dashboardMain {
+  background-image: url('../../assets/images/login-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 95vh;
+  display: flex;
+  align-items: center;
+  padding-top: 70px;
+  padding-bottom: 160px;
+  margin-top: 8vh;
+  .dashboardBoxesMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: wrap;
+    .dashboardBoxes {
+      margin-right: 65px;
+      margin-bottom: 65px;
+      &:nth-child(4n),
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+  .footerLogo {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+  }
+}
+.productNotes {
+  padding: 50px;
+  border: 1px solid;
+  background-color: white;
+  border-radius: 8px;
+  text-align: center;
+}

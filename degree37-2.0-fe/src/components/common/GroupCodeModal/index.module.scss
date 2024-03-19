@@ -1,0 +1,46 @@
+.CreateMessageModal {
+  .MessageModalInner {
+    max-width: 785px;
+    padding: 30px;
+    .MessageModalContent {
+      text-align: left;
+      :global {
+        form {
+          h3 {
+            margin-bottom: 30px;
+          }
+          .formGroup {
+            padding: 0;
+            margin: 0;
+            border-radius: unset;
+            background-color: unset;
+            border: none;
+            width: unset;
+            justify-content: left;
+            .form-field {
+              .radio-label {
+                margin-right: 30px;
+              }
+              &.checkbox {
+                label {
+                  margin-top: 0;
+                  margin-left: 0;
+                  margin-right: 10px;
+                }
+              }
+            }
+            .textarea {
+              margin-right: 0;
+            }
+          }
+          .buttons {
+            justify-content: right;
+            .btn {
+              margin-left: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

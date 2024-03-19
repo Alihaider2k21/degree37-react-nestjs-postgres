@@ -1,0 +1,345 @@
+@import '../../../../styles/Global/Variable.scss';
+
+.formcontainer {
+  margin-top: 12vh;
+  margin-bottom: 30vh;
+}
+
+.heading {
+  margin-bottom: 24px !important;
+  margin-top: -7px !important;
+}
+
+.dropdownWidthMenu {
+  width: 255px !important;
+}
+
+.footerNonCollection {
+  margin-top: 0px !important;
+
+  button {
+    padding: 12px 23px !important;
+  }
+}
+
+.plusNon {
+  padding: 0px !important;
+  margin-left: 18px !important;
+  margin-bottom: 22.15px !important;
+}
+
+.cancelbutton {
+  font-size: 14px;
+  margin-right: 20px;
+  color: #005375 !important;
+  line-height: 24px;
+  cursor: pointer;
+}
+
+.cancelbutton:hover {
+  color: #387de5 !important;
+}
+
+.footercancelbtn {
+  font-size: 15px !important;
+  margin-right: 0px !important;
+  padding-right: 20px !important;
+}
+
+.datepicker {
+  padding: 15px 33px 15px 20px !important;
+}
+
+.saveandclose {
+  padding: 12px 23px !important;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #387de5;
+  color: #387de5 !important;
+  margin-right: 20px !important;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-weight: 400;
+}
+
+.saveandclose:hover {
+  background-color: #edf4ff !important;
+}
+
+.labelTimer {
+  top: 25%;
+  font-size: 12px;
+  color: rgb(85, 85, 85);
+}
+
+.labelTop {
+  height: 36px;
+  width: 36px;
+  margin-bottom: 20px !important;
+  color: #fff;
+  font-size: 16px;
+}
+
+.addShift {
+  min-height: 40px !important;
+  padding: 8px 23px !important;
+}
+
+.dropdownWidthMenu {
+  width: 255px !important;
+}
+
+.pageCardactive {
+  height: 32px;
+  min-width: 32px;
+  padding: 2px;
+  border-radius: 4px;
+  border: none;
+  margin: 0 6px;
+  color: $neutral9;
+  background: $primary;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pageCard {
+  background: none;
+  border: none;
+  border-radius: 3px;
+  padding: 0.3rem 0.7rem;
+  color: $neutral;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  > svg {
+    color: #387de5;
+  }
+
+  &:disabled {
+    > svg {
+      color: lightgray;
+    }
+
+    cursor: not-allowed;
+  }
+}
+
+//////////////////////////////nceCreate Style/////////////////////////////
+.label:hover {
+  color: #000 !important;
+}
+
+.account {
+  .subHeading {
+    font-family: 'Inter';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-top: 1rem;
+  }
+
+  .form-field.checkbox {
+    width: 33%;
+    /* Set the width to 33% */
+    display: inline-flex;
+    /* Display inline */
+    align-items: center;
+    /* Align items vertically */
+    margin-bottom: 0;
+
+    /* Remove default margin */
+    &:not(:last-child) {
+      margin-right: 20px;
+      /* Add some spacing between checkboxes */
+    }
+
+    .form-check-input {
+      width: 22px;
+      height: 22px;
+    }
+
+    .form-check-label {
+      margin-left: 5px;
+    }
+
+    .error {
+      margin-top: 5px;
+    }
+  }
+
+  p {
+    color: $neutral;
+  }
+
+  :global {
+    .form-field.checkbox.cc label {
+      margin-left: 0px !important;
+    }
+  }
+}
+
+.imageMainContent {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 -5px 5px -5px #333;
+  background-color: white;
+}
+
+.drop > li > a:hover {
+  background-color: #1967d2 !important;
+  color: white !important;
+  // border: 1px solid #000 !important;
+}
+
+.radioBtnGap {
+  width: auto;
+
+  > div {
+    width: 39.8% !important;
+  }
+}
+
+.formCheckBoxes {
+  width: 100% !important;
+  text-wrap: nowrap !important;
+}
+
+.btnAddContact {
+  display: inline-flex;
+  height: 40px;
+  padding: 12px 23px;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background-color: #387de5;
+  margin-bottom: 0px;
+  color: white !important;
+
+  &:hover {
+    cursor: pointer;
+    background-color: #72a3d0;
+  }
+}
+
+.tableAccount {
+  thead {
+    tr {
+      th {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 16px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td {
+        padding-left: 30px;
+        padding-right: 30px;
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+
+  border: 1px solid #d9d9d9;
+}
+
+.modalTableAccount {
+  thead {
+    background-color: #cfd8e5 !important;
+
+    tr {
+      background-color: #cfd8e5 !important;
+
+      th:nth-child(1) {
+        text-align: center !important;
+      }
+
+      th {
+        background-color: #cfd8e5 !important;
+        font-size: 16px;
+        font-weight: 500;
+        vertical-align: middle;
+        height: 50px !important;
+      }
+    }
+  }
+
+  tbody {
+    tr {
+      td:nth-child(1) {
+        text-align: center !important;
+      }
+
+      td {
+        vertical-align: middle;
+        font-size: 14px;
+        font-weight: 400;
+
+        input[type='checkbox'] {
+          padding: 8px !important;
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+
+  border: 1px solid #d9d9d9;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.btncancel {
+  font-size: 14px;
+  margin-right: 20px;
+  margin-bottom: 0px;
+  color: #005375;
+
+  &:hover {
+    color: #387de5;
+    cursor: pointer;
+  }
+}
+
+.shift-count {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+}
+
+.labelselected {
+  top: 0.8rem;
+}
+
+.tooltipTime {
+  font-size: 12px;
+}
+
+.hideScroll {
+  overflow: hidden !important;
+
+  /* Hide scrollbars for Chrome, Safari, and Opera */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbars for Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}

@@ -1,0 +1,121 @@
+@import '../../../../styles//Global/Variable.scss';
+
+.NotesBar {
+  height: 41px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #d9d9d9;
+  div {
+    p {
+      padding: 0px 11px;
+      color: #005375;
+      height: 100%;
+      vertical-align: middle;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .activeNotes {
+      background-color: #72a3d0;
+      padding: 0px 11px;
+      color: white;
+    }
+  }
+
+  .addNote {
+    display: inline-flex;
+    height: 40px;
+    padding: 12px 23px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    border-radius: 6px;
+    background-color: #387de5;
+    color: white;
+  }
+  .addNote:hover {
+    cursor: pointer;
+    background-color: #72a3d0;
+  }
+}
+
+.tableViewInnerWidth {
+  max-width: 100% !important;
+}
+.cancel {
+  font-size: 14px !important;
+  color: #005375 !important;
+}
+.form_footer {
+  // position: absolute;
+  margin-top: 152px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  // align-items: center;
+  justify-content: space-between;
+  background-color: $neutral9;
+  min-height: 65px;
+  align-items: center;
+  padding: 13px 30px;
+  z-index: 2;
+
+  button {
+    font-size: 16px;
+    padding: 12px !important;
+    margin-left: 20px;
+    // background-color: red !important;
+    box-sizing: border-box !important;
+    // width: 145px !important;
+    min-height: 40px !important;
+    max-height: 40px !important;
+  }
+  span {
+    font-size: 14px;
+  }
+
+  // button {
+  //   margin-right: 15px;
+  //   &:first-child{
+  //     margin-left: 16rem;
+  //   }
+  // }
+
+  // .archive_btn {
+  //   margin-left: 4rem;
+  // }
+}
+
+.saveButton {
+  font-size: 16px !important;
+  width: 145px;
+}
+
+.upload-btn-wrapper {
+  display: inline-flex;
+  height: 40px;
+  // padding: 12px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: #387de5;
+  overflow: hidden; /* This is important to hide the file input */
+  position: relative; /* Necessary for positioning the file input element */
+  button {
+    background-color: #387de5;
+    padding: 12px 23px;
+  }
+  input[type='file'] {
+    font-size: 100px; /* Increase the font size to make the file input button large */
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0; /* Hide the default file input button */
+    cursor: pointer; /* Change cursor on hover to indicate interactivity */
+  }
+}

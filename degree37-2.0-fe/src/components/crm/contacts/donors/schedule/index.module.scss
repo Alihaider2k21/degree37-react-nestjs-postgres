@@ -1,0 +1,53 @@
+@import '../../../../../styles/Global/Variable.scss';
+
+.datepicker {
+  width: 18rem;
+  &::placeholder {
+    color: #a3a3a3;
+  }
+}
+
+.w80 {
+  width: 80% !important;
+}
+.w60 {
+  width: 60% !important;
+}
+.fieldDate {
+  position: relative;
+
+  input:placeholder-shown {
+    padding-top: 10px !important;
+  }
+
+  label {
+    color: #555555;
+    top: 19% !important;
+    font-size: 12px !important;
+  }
+  .dateCross {
+    right: 18%;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+.scheduleBtn {
+  min-height: initial;
+  color: $primary !important;
+  font-size: 15px !important ;
+  border-color: $primary;
+  border-radius: 5px !important;
+  border-width: 1px !important;
+}
+.labelselected {
+  top: 0.8rem;
+  font-size: 12px !important;
+}
+
+.timerCross {
+  right: 3.1rem !important;
+  top: 1.17rem !important;
+  color: hsl(0, 0%, 80%);
+  font-size: 1rem !important;
+}
